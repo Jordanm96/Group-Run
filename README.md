@@ -13,16 +13,54 @@ Group-Run is an Airtable and React build where the user is able to enter in and 
 ## Component Heirarchy
 [My component heirarchy](https://imgur.com/ehwd0aw)
 
-## API and Data Sample
+## Airtable Sample
 
 
 ## MVP/PostMVP
 
+#### MVP
+- Homepage with all runs tracked and mapped out in a column
+- Get and post runs from Airtable
+- Use forms to create new runs and update them on Airtable/the homepage
+- setToggleFetch, useHistory("/")
+
+#### PostMVP
+- Delete runs from the homepage
+- Allow edits to past runs
+- Include a box at the top that will always have the users best run based on distance and speed
+- Include a location input on the form component
+
 ## Project Schedule
 
+|  Day | Deliverable | Status
+|---|---| ---|
+|Mar 13-15| Prompt / Wireframes / Component Heirarchy / Timeframes | Incomplete
+|Mar 15| Project Approval | Incomplete
+|Mar 15-16| Create Components/ Get,Set Data| Incomplete
+|Mar 16-17| Create basic CSS for all Media-queries| Incomplete
+|Mar 18| MVP | Incomplete
+|Mar 18-19| Advanced CSS/ Darkmode,Lightmode | Incomplete
+|Mar 19-21| PMVP/Finalize CSS | Incomplete
+|March 22| Presentations | Incomplete
 
 ## Timeframes
 
+I think i need to add more things in here, not sure what yet.
+
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Proposal | H | 2hrs| 2hrs | hrs |
+| Airtable Setup | H | 1hrs| hrs | hrs |
+| useEffect() | H | 1.5hrs| hrs | hrs |
+| Header Component | H | 2hrs| hrs | hrs |
+| Run Component | H | 4hrs| hrs | hrs |
+| Form Component | H | 3hrs| hrs | hrs |
+| Route/Link | H | 4hrs| hrs | hrs |
+| Header CSS | H | 2hrs| hrs | hrs |
+| Run CSS | H | 5hrs| hrs | hrs |
+| Form CSS | H | 4hrs| hrs | hrs |
+| Media-queries | H | 8hrs| hrs | hrs |
+| Total | H | 36.5hrs| hrs | hrs |
 
 ## SWOT Analysis
 
