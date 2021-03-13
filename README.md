@@ -5,12 +5,33 @@ Group-Run
 
 
 ## Project Description
-Group-Run is an Airtable and React build where the user is able to enter in and keep track of their runs/jogs. The homepage will list out all the runs that have been submitted via form. It will have a section that leads the user to the form where they may enter in their run information including: the date, location, distance, speed, calories burned and an emoji ranking system that will let them rate how easy/fun/challenging a specific run was. Each entry will be tracked on the homepage so the user can view their progress. They will also be able to edit/delete any workouts they submit as well.
+Group-Run is an Airtable and React build where the user is able to enter in and keep track of their runs/jogs. The homepage will list out all the runs that have been submitted via form. It will have a section that leads the user to the form where they may enter in their run information including: the date, location, distance, time, calories burned and an emoji ranking system that will let them rate how easy/fun/challenging a specific run was. Each entry will be tracked on the homepage so the user can view their progress. They will also be able to edit/delete any workouts they submit as well.
 
 ## Wireframes
 
+Regular Browser:
+[Homepage](https://wireframe.cc/bsCMUU)
+[Form Component](https://wireframe.cc/2xOC8C)
+[Edit Component](https://wireframe.cc/NIhNQt)
+[Specific Run Component](https://wireframe.cc/yCg7Ul)
+
+Phone:
+[Homepage](https://wireframe.cc/iNqqHy)
+[Form Component](https://wireframe.cc/nm1EGs)
+[Edit Component](https://wireframe.cc/l5ynUD)
+[Specific Run Component](https://wireframe.cc/AU5U6z)
+
+Tablet:
+[Homepage](https://wireframe.cc/uIUL3w)
+[Form Component](https://wireframe.cc/W876uP)
+[Edit Component](https://wireframe.cc/MRlotu)
+[Specific Run Component](https://wireframe.cc/Azv2nM)
 
 ## Component Heirarchy
+I want a component that will have route to /specificrun.
+The homepage maps out all of the runs. (add an edit and delete button for each run)
+When you click on the run it will link to /specificrun which has all the info for that run on it
+
 [My component heirarchy](https://imgur.com/ehwd0aw)
 
 ## Airtable Sample
