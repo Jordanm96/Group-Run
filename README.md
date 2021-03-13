@@ -11,7 +11,7 @@ Group-Run is an Airtable and React build where the user is able to enter in and 
 
 
 ## Component Heirarchy
-
+[My component heirarchy](https://imgur.com/ehwd0aw)
 
 ## API and Data Sample
 
@@ -25,13 +25,14 @@ Group-Run is an Airtable and React build where the user is able to enter in and 
 
 
 ## SWOT Analysis
-### Strengths:
 
-### Weaknesses:
+### Strengths: I have a pretty good understanding of how to use CRUD and seperate out my Components.
 
-### Opportunities:
+### Weaknesses: I am not sure exactly how I want my project to look at the moment. I hope to create a solid wireframe initially but may have to make some changes based on the different Media Queries.
 
-### Threats: 
+### Opportunities: I will be able to demonstrate my knowledge of using React to create Apps within just the first couple days of project week. As someone who tries to run almost every day, I am excited to be able to log and keep track of all of my personal runs so I can monitor my improvement and progression.
+
+### Threats: This will be the first time starting with a mobile-first style so I will have to get used to looking at a smaller screen before I create styles for bigger screens.
 
 
 
