@@ -36,6 +36,25 @@ When you click on the run it will link to /specificrun which has all the info fo
 
 ## Airtable Sample
 
+https://airtable.com/tbld24sbpYe5O0OAX/viwwAvtTbXMXsdlp5?blocks=hide
+
+Sample return 
+
+    "records": [
+        {
+            "id": "recGvcUXmKI2pKRSz",
+            "fields": {
+                "date": "2021-03-13",
+                "distance": 3.2,
+                "time": 1800,
+                "caloriesBurned": 250,
+                "difficulty": "easy",
+                "additionalNotes": "had to cut my run short due to the weather"
+            },
+            "createdTime": "2021-03-13T23:13:34.000Z"
+        }
+    ],
+    "offset": "recGvcUXmKI2pKRSz"
 
 ## MVP/PostMVP
 
