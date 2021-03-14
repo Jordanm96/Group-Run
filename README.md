@@ -70,6 +70,7 @@ Sample return
 - Allow edits to past runs
 - Include a box at the top that will always have the users best run based on distance and speed
 - Include a location input on the form component
+- USe emojis as the ranking system instead of just stars
 
 ## Project Schedule
 
