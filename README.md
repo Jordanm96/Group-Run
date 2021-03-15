@@ -91,8 +91,8 @@ Sample return
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Mar 13-15| Prompt / Wireframes / Component Heirarchy / Timeframes | Incomplete
-|Mar 15| Project Approval | Incomplete
+|Mar 13-15| Prompt / Wireframes / Component Heirarchy / Timeframes | Complete
+|Mar 15| Project Approval | Complete
 |Mar 15-16| Create Components/ Get,Set Data| Incomplete
 |Mar 15-16| Create basic CSS for all Media-queries| Incomplete
 |Mar 17-18| MVP | Incomplete
@@ -102,16 +102,15 @@ Sample return
 
 ## Timeframes
 
-There may be things I am missing at the moment but I think I included the majority.
-
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Proposal | H | 2hrs| 2hrs | hrs |
-| Airtable Setup | H | 1hrs| hrs | hrs |
-| useEffect() | H | 1.5hrs| hrs | hrs |
+| Proposal | H | 2hrs| 2hrs | 1hrs |
+| Airtable Setup | H | 1hrs| 1hrs | 1hrs |
+| useEffect() | H | 1.5hrs| 2hrs | 2hrs |
 | Header Component | H | 2hrs| hrs | hrs |
-| Run Component | H | 4hrs| hrs | hrs |
-| Form Component | H | 3hrs| hrs | hrs |
+| Home Component | H | 2hrs| hrs | 1hrs |
+| RunData Component | H | 4hrs| hrs | 2hrs |
+| NewRunForm Component | H | 3hrs| hrs | 2hrs |
 | Route/Link | H | 4hrs| hrs | hrs |
 | Header CSS | H | 2hrs| hrs | hrs |
 | Home CSS | H | 4hrs| hrs | hrs |
