@@ -1,10 +1,12 @@
 import "./App.css";
-import { Link, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import { baseURL, config } from "./services"; //This line is getting our api url
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Run from "./components/Run";
+import HomeRuns from "./components/HomeRuns";
 import RunData from "./components/RunData";
+import Navbar from "./components/Navbar";
+import NewRunForm from "./components/NewRunForm";
 
 function App() {
   const [runs, setRuns] = useState([]);
@@ -13,35 +15,37 @@ function App() {
   useEffect(() => {
     const getRuns = async () => {
       const resp = await axios.get(baseURL, config);
-      console.log(resp.data.records);
       setRuns(resp.data.records);
     };
     getRuns();
-  }, []);
+  }, [toggleFetch]);
 
   return (
     <div className="App">
-
       {/* <Header component /> */}
+      <Route path="/">
+      <Navbar />
+
+      </Route>
 
       <Route exact path="/">
-        <h1>home</h1>
-        <p>Mapped out runs will go here</p>
+        {/* <Navbar /> */}
+        <h1>Group Run!// The Track// Track and Yield</h1>
+
         <div className="home-containter">
           {runs.map((run) => (
-            <Run run = {run} />
+            <HomeRuns run={run} />
           ))}
         </div>
       </Route>
 
-      <Route path="/run/:id" >
-        <h1>This is where the details for the person's run will go and</h1>
-        <RunData runs={runs}/>
+      <Route path="/run/:id">
+        <RunData runs={runs} />
         {/* <h2>Edit button go here?</h2> */}
       </Route>
 
       <Route path="/add">
-        <h2>Add Run FORM component goes here</h2>
+        <NewRunForm runs={runs} setToggleFetch={setToggleFetch} />
       </Route>
 
       <Route path="/edit:id">
@@ -49,7 +53,6 @@ function App() {
       </Route>
 
       {/* <Footer component/> */}
-      
     </div>
   );
 }

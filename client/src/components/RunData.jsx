@@ -29,8 +29,9 @@ function JogData(props) {
       <h3>Cals: {caloriesBurned}</h3>
       <h4>How was it 1-5? {satisfactionLevel}</h4>
       <p>Notes: {additionalNotes}</p>
-      <h2>Edit button/Link here</h2>
-      <h2>Back to home page button/Link here</h2>
+      
+      {/* <h2>Edit button/Link here</h2>
+      <h2>Back to home page button/Link here</h2> */}
     </div>
   );
 }
