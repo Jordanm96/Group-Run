@@ -5,7 +5,7 @@ Group-Run
 
 
 ## Project Description
-Group-Run is an Airtable and React build where the user is able to enter in and keep track of their runs/jogs. The homepage will list out all the runs that have been submitted via form. It will have a section that leads the user to the form where they may enter in their run information including: the date, their name, location, distance, time, calories burned and an emoji ranking system that will let them rate how easy/fun/challenging a specific run was. Each entry will be tracked on the homepage so the user can view their progress. They will also be able to edit/delete any workouts they submit as well.
+Group-Run is an Airtable and React build where the user is able to enter in and keep track of their runs/jogs. The homepage will list out all the runs that have been submitted via form. It will have an "Add run" section that leads the user to the form where they may enter in their run information including: the date, their name, location, distance, time, calories burned and an emoji ranking system that will let them rate how easy/fun/challenging a specific run was. Each entry will be tracked on the homepage so the user can view their progress. They will also be able to edit/delete any workouts they submit as well.
 
 ## Wireframes
 I included 3 MQ layouts. Each one has a homepage, form/edit component(pretty much identical), and the specific run component which is going to be linked to clicking on a run from the homepage. The homepage will have options to edit and delete a post.
