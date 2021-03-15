@@ -34,7 +34,7 @@ function App() {
 
         <div className="home-containter">
           {runs.map((run) => (
-            <HomeRuns run={run} />
+            <HomeRuns key = {run.id} run={run} />
           ))}
         </div>
       </Route>
