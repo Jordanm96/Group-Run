@@ -7,6 +7,8 @@ import HomeRuns from "./components/HomeRuns";
 import RunData from "./components/RunData";
 import Navbar from "./components/Navbar";
 import NewRunForm from "./components/NewRunForm";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   const [runs, setRuns] = useState([]);
@@ -22,25 +24,22 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Header component /> */}
       <Route path="/">
-      <Navbar />
-
+        {/* Set to this path because I want the header to be on every page */}
+        <Header />
       </Route>
 
       <Route exact path="/">
-        {/* <Navbar /> */}
-        <h1>Group Run!// The Track// Track and Yield</h1>
-
+        <Navbar />
         <div className="home-containter">
           {runs.map((run) => (
-            <HomeRuns key = {run.id} run={run} />
+            <HomeRuns key = {run.id} run={run}  setToggleFetch = {setToggleFetch} />
           ))}
         </div>
       </Route>
 
       <Route path="/run/:id">
-        <RunData runs={runs} />
+        <RunData runs={runs}/>
         {/* <h2>Edit button go here?</h2> */}
       </Route>
 
@@ -52,6 +51,7 @@ function App() {
         <h2>Edit run component goes here</h2>1
       </Route>
 
+          <Footer />
       {/* <Footer component/> */}
     </div>
   );
