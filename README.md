@@ -5,7 +5,7 @@ Group-Run
 
 
 ## Project Description
-Group-Run is an Airtable and React build where the user is able to enter in and keep track of their runs/jogs. The homepage will list out all the runs that have been submitted via form. It will have a section that leads the user to the form where they may enter in their run information including: the date, location, distance, time, calories burned and an emoji ranking system that will let them rate how easy/fun/challenging a specific run was. Each entry will be tracked on the homepage so the user can view their progress. They will also be able to edit/delete any workouts they submit as well.
+Group-Run is an Airtable and React build where the user is able to enter in and keep track of their runs/jogs. The homepage will list out all the runs that have been submitted via form. It will have a section that leads the user to the form where they may enter in their run information including: the date, their name, location, distance, time, calories burned and an emoji ranking system that will let them rate how easy/fun/challenging a specific run was. Each entry will be tracked on the homepage so the user can view their progress. They will also be able to edit/delete any workouts they submit as well.
 
 ## Wireframes
 I included 3 MQ layouts. Each one has a homepage, form/edit component(pretty much identical), and the specific run component which is going to be linked to clicking on a run from the homepage. The homepage will have options to edit and delete a post.
@@ -51,7 +51,8 @@ Sample return
                 "additionalNotes": "had to cut my run short due to the weather",
                 "caloriesBurned": 330,
                 "date": "2021-03-13",
-                "distance": 3.2
+                "distance": 3.2,
+                "runnerName": "Junea"
             },
             "createdTime": "2021-03-13T23:13:34.000Z"
         },
@@ -62,7 +63,8 @@ Sample return
                 "time": 18,
                 "caloriesBurned": 220,
                 "date": "2021-03-14",
-                "distance": 2
+                "distance": 2,
+                "runnerName": "Jordan"
             },
             "createdTime": "2021-03-14T16:41:05.000Z"
         }
@@ -92,15 +94,15 @@ Sample return
 |Mar 13-15| Prompt / Wireframes / Component Heirarchy / Timeframes | Incomplete
 |Mar 15| Project Approval | Incomplete
 |Mar 15-16| Create Components/ Get,Set Data| Incomplete
-|Mar 16-17| Create basic CSS for all Media-queries| Incomplete
-|Mar 18| MVP | Incomplete
+|Mar 15-16| Create basic CSS for all Media-queries| Incomplete
+|Mar 17-18| MVP | Incomplete
 |Mar 18-19| Advanced CSS/ Darkmode,Lightmode | Incomplete
 |Mar 19-21| PMVP/Finalize CSS | Incomplete
 |March 22| Presentations | Incomplete
 
 ## Timeframes
 
-I think i need to add more things in here, not sure what yet.
+There may be things I am missing at the moment but I think I included the majority.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
@@ -112,10 +114,11 @@ I think i need to add more things in here, not sure what yet.
 | Form Component | H | 3hrs| hrs | hrs |
 | Route/Link | H | 4hrs| hrs | hrs |
 | Header CSS | H | 2hrs| hrs | hrs |
-| Run CSS | H | 5hrs| hrs | hrs |
+| Home CSS | H | 4hrs| hrs | hrs |
+| Run CSS | H | 4hrs| hrs | hrs |
 | Form CSS | H | 4hrs| hrs | hrs |
 | Media-queries | H | 8hrs| hrs | hrs |
-| Total | H | 36.5hrs| hrs | hrs |
+| Total | H | 39.5hrs| hrs | hrs |
 
 ## SWOT Analysis
 
