@@ -41,21 +41,34 @@ https://airtable.com/tbld24sbpYe5O0OAX/viwwAvtTbXMXsdlp5?blocks=hide
 
 Sample return 
 
+{
     "records": [
         {
             "id": "recGvcUXmKI2pKRSz",
             "fields": {
+                "satisfactionLevel": 4,
+                "time": 30,
+                "additionalNotes": "had to cut my run short due to the weather",
+                "caloriesBurned": 330,
                 "date": "2021-03-13",
-                "distance": 3.2,
-                "time": 1800,
-                "caloriesBurned": 250,
-                "difficulty": "easy",
-                "additionalNotes": "had to cut my run short due to the weather"
+                "distance": 3.2
             },
             "createdTime": "2021-03-13T23:13:34.000Z"
+        },
+        {
+            "id": "recxft12eKPn2B55h",
+            "fields": {
+                "satisfactionLevel": 5,
+                "time": 18,
+                "caloriesBurned": 220,
+                "date": "2021-03-14",
+                "distance": 2
+            },
+            "createdTime": "2021-03-14T16:41:05.000Z"
         }
     ],
-    "offset": "recGvcUXmKI2pKRSz"
+    "offset": "recxft12eKPn2B55h"
+}
 
 ## MVP/PostMVP
 
