@@ -73,9 +73,54 @@
   grid-column: 4 / 6;
   margin: 5px;
 }
+/* Input fields */
+input {
+background-color: white;
+}
+#runnerName {
+  width: 125px;
+  background-color:white;
+}
+#date {
+  background-color:white;
+}
+#distance { 
+  width: 40px;
+  background-color:white;
+} 
+.duration {
+  width: 40px;
+}
+#hours {
+  background-color:white;
+}
+#minutes {
+  background-color:white;
+}
+#seconds {
+  background-color:white;
+}
+#caloriesBurned {
+  width: 40px;
+  background-color:white;
+
+}
+#satisfactionLevel {
+  width: 40px;
+  background-color:white;
+
+}
+#additionalNotes {
+  width: 200px;
+  height: 50px;
+  background-color:white;
+}
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) { 
   *{
     background-color: lightcoral;
   }
 }
+
+/* Helpful links for me! */
+/* Adjust input field sizehttps://forum.squarespace.com/topic/15529-is-there-a-way-to-change-the-size-of-form-fields/ */

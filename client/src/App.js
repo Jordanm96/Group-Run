@@ -45,7 +45,7 @@ function App() {
       </Route>
 
       <Route path="/edit/:id">
-        <h2 className="edit-run-here">Edit your run here!</h2>
+        <h2 className="edit-run-here">Edit:</h2>
         <NewRunForm runs={runs} setToggleFetch={setToggleFetch} />
       </Route>
 

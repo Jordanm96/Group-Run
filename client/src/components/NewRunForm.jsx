@@ -20,7 +20,6 @@ function NewRunForm(props) {
   const params = useParams();
 
   useEffect(() => {
-
     if (params.id && props.runs.length > 0) {
       const run = props.runs.find((run) => run.id === params.id);
       if (run) setDate(run.fields.date);
@@ -59,11 +58,8 @@ function NewRunForm(props) {
   };
 
   return (
-        <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
       <div className="form-container">
-
-      {/* <h2 className="add-run-here">Add your run here!</h2> */}
-      {/* <h2 className="add-run-here">Edit your run here!</h2> */}
         <label className="user" htmlFor="runnerName">
           User:{" "}
           <input
@@ -84,22 +80,25 @@ function NewRunForm(props) {
             onChange={(e) => setDate(e.target.value)}
           />{" "}
         </label>
+
         <label className="distance" htmlFor="distance">
           Distance:{" "}
           <input
             required
             id="distance"
             type="number"
-            placeholder="miles"
             value={distance}
             onChange={(e) => setDistance(e.target.valueAsNumber)}
-          />
+          />{" "}
+          mile(s)
         </label>
-          <p id="time">Time</p>
+
+        <p id="time">Time</p>
         <label className="hours" htmlFor="hours">
           Hours:{" "}
           <input
             id="hours"
+            className="duration"
             type="number"
             value={hours}
             onChange={(e) => setHours(e.target.valueAsNumber)}
@@ -110,6 +109,7 @@ function NewRunForm(props) {
           Min:{" "}
           <input
             id="minutes"
+            className="duration"
             type="number"
             value={minutes}
             onChange={(e) => setMinutes(e.target.valueAsNumber)}
@@ -120,6 +120,7 @@ function NewRunForm(props) {
           Sec:{" "}
           <input
             id="seconds"
+            className="duration"
             type="number"
             value={seconds}
             onChange={(e) => setSeconds(e.target.valueAsNumber)}
@@ -138,8 +139,9 @@ function NewRunForm(props) {
         </label>
 
         {/* Will have to find a way for the satisfaction level to be converted to stars so they are logged in airtable */}
+        {/* create a drop down method here for the input 1-5 */}
         <label className="satisfaction-level" htmlFor="satisfactionLevel">
-          How satisfied were you?{" "}
+          Difficulty{" "}
           <input
             required
             id="satisfactionLevel"
@@ -152,7 +154,7 @@ function NewRunForm(props) {
 
         <label className="additional-notes" htmlFor="additionalNotes">
           Notes (optional):{" "}
-          <input
+          <textarea
             id="additionalNotes"
             type="text"
             value={additionalNotes}
@@ -160,13 +162,14 @@ function NewRunForm(props) {
           />
         </label>
 
-        <div className = "form-buttons">
-        <button id="add=button" type="submit">Add</button>
-        <Link to="/">
-          <button id="cancel-button">Cancel</button>
-        </Link>
+        <div className="form-buttons">
+          <button id="add=button" type="submit">
+            Add
+          </button>
+          <Link to="/">
+            <button id="cancel-button">Cancel</button>
+          </Link>
         </div>
-
       </div>
     </form>
   );
