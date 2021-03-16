@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { useHistory, useParams, Link } from "react-router-dom";
 import { baseURL, config } from "../services";
+import "../css/NewRunForm.css";
 // Import params here for the edit PUT request
 
 function NewRunForm(props) {
@@ -61,7 +62,7 @@ function NewRunForm(props) {
         <form onSubmit={handleSubmit}>
       <div className="form-container">
 
-      <h2 className="add-run-here">Add your run here!</h2>
+      {/* <h2 className="add-run-here">Add your run here!</h2> */}
       {/* <h2 className="add-run-here">Edit your run here!</h2> */}
         <label className="user" htmlFor="runnerName">
           User:{" "}
