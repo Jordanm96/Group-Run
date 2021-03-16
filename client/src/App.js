@@ -1,5 +1,5 @@
 import "./App.css";
-import { Route } from "react-router-dom";
+import { Route, Link } from "react-router-dom";
 import { baseURL, config } from "./services"; //This line is getting our api url
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -44,8 +44,13 @@ function App() {
       </Route>
 
       <Route exact path="/add">
-      <h2>Add your run here!</h2>
+        <h2>Add your run here!</h2>
         <NewRunForm runs={runs} setToggleFetch={setToggleFetch} />
+        <Link to = "/">
+        <button>Cancel Entry</button>
+        </Link>
+        
+
       </Route>
 
       <Route path="/edit/:id">
