@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { baseURL, config } from "../services";
 
 function Run(props) {
-  const { runnerName, date } = props.run.fields;
+  const { runnerName, date, satisfactionLevel } = props.run.fields;
   const { id } = props.run;
 
   const deleteRun = async () => {
@@ -16,7 +16,8 @@ function Run(props) {
       {/* This link takes you to the RunData component with all the run info */}
       <Link to={`/run/${props.run.id}`}>
         {/* Display the name of the runner and date as the link to more info */}
-      <h3>{runnerName}'s run {date}</h3>
+        <h3>{runnerName}'s run {date}</h3>
+        <h4>Rating: {satisfactionLevel}/5</h4>
       </Link>
       
       <button onClick = {deleteRun}>Delete Run</button>

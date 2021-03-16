@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { useHistory, useParams } from "react-router-dom";
+import { useHistory, useParams, Link } from "react-router-dom";
 import { baseURL, config } from "../services";
 // Import params here for the edit PUT request
 
@@ -9,9 +9,9 @@ function NewRunForm(props) {
   const [date, setDate] = useState("");
   const [runnerName, setRunnerName] = useState("");
   const [distance, setDistance] = useState("");
-  const [hours, setHours] = useState(0);
-  const [minutes, setMinutes] = useState(0);
-  const [seconds, setSeconds] = useState(0);
+  const [hours, setHours] = useState("00");
+  const [minutes, setMinutes] = useState("00");
+  const [seconds, setSeconds] = useState("00");
   const [caloriesBurned, setCaloriesBurned] = useState("");
   const [satisfactionLevel, setSatisfactionLevel] = useState("");
   const [additionalNotes, setAdditionalNotes] = useState("");
@@ -134,6 +134,9 @@ function NewRunForm(props) {
           onChange={(e) => setAdditionalNotes(e.target.value)}
         />
         <button type="submit">Add run</button>
+        <Link to = "/">
+        <button>Cancel Entry</button>
+        </Link>
       </form>
     </div>
   );

@@ -1,4 +1,11 @@
-.App {
+* {
+  border: 2px solid purple;
+  /* width: fit-content; */
+  block-size: fit-content;
   text-align: center;
+  background: lightgray;
 }
+.header-container {
+  display: flex;
 
+}

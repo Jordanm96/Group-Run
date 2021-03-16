@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <div>
+    <div className = "header-container">
       <header>
         <Link to = "/">
         <h1>GROUP RUN!</h1>

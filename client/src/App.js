@@ -23,7 +23,7 @@ function App() {
   }, [toggleFetch]);
 
   return (
-    <div className="App">
+    <div>
       <Route path="/">
         {/* Set to this path because I want the header to be on every page */}
         <Header />
@@ -46,11 +46,6 @@ function App() {
       <Route exact path="/add">
         <h2>Add your run here!</h2>
         <NewRunForm runs={runs} setToggleFetch={setToggleFetch} />
-        <Link to = "/">
-        <button>Cancel Entry</button>
-        </Link>
-        
-
       </Route>
 
       <Route path="/edit/:id">
@@ -58,8 +53,10 @@ function App() {
         <NewRunForm runs={runs} setToggleFetch={setToggleFetch} />
       </Route>
 
+      <div className="footer">
       <Footer />
-      {/* <Footer component/> */}
+      </div>
+        
     </div>
   );
 }

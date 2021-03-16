@@ -30,16 +30,15 @@ function RunData(props) {
       <h3>
         Time: {hours}:{minutes}:{seconds}
       </h3>
-      <h3>Cals: {caloriesBurned}</h3>
+      <h3>{caloriesBurned} cals</h3>
       <h4>Rating: {satisfactionLevel}/5</h4>
       {/* if notes are left blank on form, do nothing */}
       {additionalNotes ? <p>Comments: {additionalNotes}</p> : <></>}
       <Link to={`/edit/${run.id}`}>
-        <button>Edit</button>
+        <button>Edit info</button>
       </Link>
-
       <Link to="/">
-        <button>Go back</button>
+        <button>Back</button>
       </Link>
 
       {/* <h2>Edit button/Link here</h2>*/}
