@@ -19,6 +19,7 @@ function NewRunForm(props) {
   const params = useParams();
 
   useEffect(() => {
+
     if (params.id && props.runs.length > 0) {
       const run = props.runs.find((run) => run.id === params.id);
       if (run) setDate(run.fields.date);
@@ -58,7 +59,10 @@ function NewRunForm(props) {
 
   return (
         <form onSubmit={handleSubmit}>
-    <div className= "form-container">
+      <div className="form-container">
+
+      <h2 className="add-run-here">Add your run here!</h2>
+      {/* <h2 className="add-run-here">Edit your run here!</h2> */}
         <label className="user" htmlFor="runnerName">
           User:{" "}
           <input
@@ -156,12 +160,12 @@ function NewRunForm(props) {
         </label>
 
         <div className = "form-buttons">
-        <button id="add=button" type="submit">Add run</button>
+        <button id="add=button" type="submit">Add</button>
         <Link to="/">
-          <button id="cancel-button">Cancel Entry</button>
+          <button id="cancel-button">Cancel</button>
         </Link>
         </div>
-        
+
       </div>
     </form>
   );

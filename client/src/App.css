@@ -1,9 +1,11 @@
 * {
-  border: 2px solid purple;
+  /* border: 2px solid lightcoral; */
   /* width: fit-content; */
   block-size: fit-content;
   text-align: center;
-  background: lightgray;
+  /* background-color: rgb(204, 242, 255)  ; */
+  background-color: rgb(0, 115, 153);
+
 }
 .header-container {
   display: flex;
@@ -11,56 +13,76 @@
 /* NewRunForm CSS */
 .form-container {
   display: grid;
-  /* grid-template-rows: 100px 1fr; */
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  /* grid-template-rows: 100px; */
-  height: fit-content;
-  width: fit-content;
+  grid-template-columns: repeat(8, 1fr);
+  background-color: rgb(0, 172, 230);
+}
+.form-container label {
+  background-color: rgb(0, 172, 230);
+}
+.form-container input {
+  background-color: rgb(0, 172, 230);
+
+}
+.add-run-here{
+  background-color: rgb(0, 172, 230);
+  grid-column: 4 / 6;
 }
 .user{
-  background-color: red;
+  /* background-color: red; */
   grid-column: 4 / 5;
+  margin: 2px 2.5px;
 }
 .date{
-  background-color: blue;
+  /* background-color: blue; */
   grid-column: 5 / 6;
+  margin: 2px 2.5px;
 }
 .distance {
-  background-color: green;
+  /* background-color: green; */
   grid-column: 4 / 6;
+  margin: 5px;
 }
 #time {
+  /* background-color: lightcoral; */
+  background-color: rgb(0, 172, 230);
   grid-column: 4 / 6;
+  margin: 5px;
 }
 .hours {
-  background-color: orange;
+  /* background-color: orange; */
   grid-column: 3/4;
 }
 .minutes {
-  background-color: purple;
+  /* background-color: purple; */
   grid-column: 4 / 6;
-
 }
 .seconds {
-  background-color: yellow;
+  /* background-color: yellow; */
   grid-column: 6 / 7;
-
 }
 .calories-burned {
-  background-color: magenta;
+  /* background-color: magenta; */
   grid-column: 4 / 6;
-
+  margin: 5px;
 }
 .satisfaction-level {
-  background-color: lightblue;
+  /* background-color: lightblue; */
   grid-column: 4 / 6;
-
+  margin: 5px;
 }
 .additional-notes {
-  background-color: darkgoldenrod;
+  /* background-color: darkgoldenrod; */
   grid-column: 4 / 6;
-
+  margin: 5px;
 }
 .form-buttons {
+  background-color: rgb(0, 172, 230);
   grid-column: 4 / 6;
+  margin: 5px;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) { 
+  *{
+    background-color: lightcoral;
+  }
 }

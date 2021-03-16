@@ -24,8 +24,9 @@ function RunData(props) {
   return (
     <div className="run-card">
       <h2>RunData page</h2>
-      <h3>{runnerName}</h3>
-      <h3>{date}</h3>
+      {/* <label>User: {runnerName}</label> */}
+      <h3>Runner: {runnerName}</h3>
+      <h3>Date: {date}</h3>
       <h3>Distance: {distance} miles</h3>
       <h3>
         Time: {hours}:{minutes}:{seconds}
