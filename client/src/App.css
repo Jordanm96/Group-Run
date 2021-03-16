@@ -7,5 +7,73 @@
 }
 .header-container {
   display: flex;
+}
+/* NewRunForm CSS */
+.form-container {
+  display: grid;
+  /* grid-template-rows: 100px 1fr; */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  /* grid-template-columns: 200px 200px 200px 200px 200px;  */
+  /* grid-template-rows: 100px; */
+  height: fit-content;
+  width: fit-content;
+}
+.user{
+  background-color: red;
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+}
+.date{
+  background-color: blue;
+  grid-row: 1 / 2;
+  grid-column: 4 / 5;
+}
+.distance {
+  background-color: green;
+  grid-row: 2 / 3 ;
+  grid-column: 3 / 5;
+}
+#time {
+  grid-row: 3 / 4;
+  grid-column: 3 / 5;
+}
+.hours {
+  background-color: orange;
+  grid-row: 4 / 5;
+  grid-column: 3/4;
+}
+.minutes {
+  background-color: purple;
+  grid-row: 4 / 5;
+  grid-column: 4 / 5;
+
+}
+.seconds {
+  background-color: yellow;
+  grid-row: 4 / 5;
+  grid-column: 5 / 6;
+
+}
+.calories-burned {
+  background-color: magenta;
+  grid-row: 5/ 6;
+  grid-column: 3 / 5;
+
+}
+.satisfaction-level {
+  background-color: lightblue;
+  grid-row: 6 / 7;
+  grid-column: 3 / 5;
+
+}
+.additional-notes {
+  background-color: darkgoldenrod;
+  grid-row: 7 / 8;
+  grid-column: 3 / 5;
+
+}
+.form-buttons {
+  grid-row: 8 / 9;
+  grid-column: 3 / 5;
 
 }

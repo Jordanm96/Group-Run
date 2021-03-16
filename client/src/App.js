@@ -13,7 +13,6 @@ import Footer from "./components/Footer";
 function App() {
   const [runs, setRuns] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(true);
-
   useEffect(() => {
     const getRuns = async () => {
       const resp = await axios.get(baseURL, config);
@@ -21,11 +20,9 @@ function App() {
     };
     getRuns();
   }, [toggleFetch]);
-
   return (
     <div>
       <Route path="/">
-        {/* Set to this path because I want the header to be on every page */}
         <Header />
       </Route>
 
@@ -40,7 +37,6 @@ function App() {
 
       <Route path="/run/:id">
         <RunData runs={runs} />
-        {/* <h2>Edit button go here?</h2> */}
       </Route>
 
       <Route exact path="/add">
