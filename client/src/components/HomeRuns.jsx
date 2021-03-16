@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import axios from "axios";
+import { Link } from "react-router-dom";
 import { baseURL, config } from "../services";
 
 function Run(props) {
@@ -19,7 +19,7 @@ function Run(props) {
       <h3>{runnerName}'s run {date}</h3>
       </Link>
       
-      <button onClick = {deleteRun}>Remove Run</button>
+      <button onClick = {deleteRun}>Delete Run</button>
       {/* <p>maybe include the ranking or location of the run here as well</p> */}
       
     </div>

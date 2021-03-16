@@ -33,25 +33,27 @@ function App() {
         <Navbar />
         <div className="home-containter">
           {runs.map((run) => (
-            <HomeRuns key = {run.id} run={run}  setToggleFetch = {setToggleFetch} />
+            <HomeRuns key={run.id} run={run} setToggleFetch={setToggleFetch} />
           ))}
         </div>
       </Route>
 
       <Route path="/run/:id">
-        <RunData runs={runs}/>
+        <RunData runs={runs} />
         {/* <h2>Edit button go here?</h2> */}
       </Route>
 
-      <Route path="/add">
+      <Route exact path="/add">
+      <h2>Add your run here!</h2>
         <NewRunForm runs={runs} setToggleFetch={setToggleFetch} />
       </Route>
 
-      <Route path="/edit:id">
-        <h2>Edit run component goes here</h2>1
+      <Route path="/edit/:id">
+        <h2>Edit page</h2>
+        <NewRunForm runs={runs} setToggleFetch={setToggleFetch} />
       </Route>
 
-          <Footer />
+      <Footer />
       {/* <Footer component/> */}
     </div>
   );
