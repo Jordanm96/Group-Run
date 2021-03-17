@@ -141,7 +141,7 @@ function NewRunForm(props) {
         {/* Will have to find a way for the satisfaction level to be converted to stars so they are logged in airtable */}
         {/* create a drop down method here for the input 1-5 */}
         <label className="satisfaction-level" htmlFor="satisfactionLevel">
-          Difficulty{" "}
+          How was it? {" "}
           <input
             required
             id="satisfactionLevel"
@@ -161,7 +161,7 @@ function NewRunForm(props) {
             onChange={(e) => setAdditionalNotes(e.target.value)}
           />
         </label>
-
+        
         <div className="form-buttons">
           <button id="add=button" type="submit">
             Add

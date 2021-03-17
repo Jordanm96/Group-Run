@@ -4,7 +4,7 @@ import { baseURL, config } from "../services";
 import "../css/HomeRuns.css";
 
 function Run(props) {
-  const { runnerName, date } = props.run.fields;
+  const { runnerName, date, satisfactionLevel } = props.run.fields;
   const { id } = props.run;
 
   const deleteRun = async () => {
@@ -18,8 +18,8 @@ function Run(props) {
         <h2 className="runner-link">{runnerName}'s Run</h2>
         {/* Potentially include the rating here as well */}
       </Link>
-      <h5 className="date-logged">{date}</h5>
-
+      <p className="rating">Rating: {satisfactionLevel}/5</p>
+      <p className="date-logged">{date}</p>
       <button id="delete-button" onClick={deleteRun}>
         Delete Run
       </button>

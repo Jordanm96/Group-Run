@@ -29,7 +29,7 @@ function RunData(props) {
       <label className="distance-label" htmlFor="">Distance:</label>
       <label className="time-label" htmlFor="">Time:</label>
       <label className="calories-label" htmlFor="">Calories:</label>
-      <label className="difficulty-label" htmlFor="">Difficulty:</label>
+      <label className="rating-label" htmlFor="">How was it?</label>
       <label className="comments-label" htmlFor="">Comments:</label>
 
       <p className="name-entry">{runnerName}</p>
@@ -40,8 +40,8 @@ function RunData(props) {
       <p className="difficulty-entry">{satisfactionLevel}/5</p>
       {additionalNotes ? <p className="comments-entry">{additionalNotes}</p> : <p className="comments-entry">No comments</p>}
       
-      <Link id="back-button" to="/">
-        <button >Back</button>
+      <Link id="home-button" to="/">
+        <button >Home</button>
       </Link>
       <Link id="edit-button" to={`/edit/${run.id}`}>
         <button >Edit info</button>

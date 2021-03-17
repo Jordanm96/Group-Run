@@ -29,7 +29,7 @@ and have the actual user info center-right*/
 .calories-label{
   grid-column: 1;
 }
-.difficulty-label{
+.rating-label{
   grid-column: 1;
 }
 .comments-label{
@@ -63,7 +63,7 @@ and have the actual user info center-right*/
   grid-column: 2;
   grid-row: 7;
 }
-#back-button{
+#home-button{
   grid-column: 1;
   grid-row: 8;
 }
