@@ -29,7 +29,6 @@ Tablet:
 [Specific Run Component](https://wireframe.cc/Azv2nM)
 
 ## Component Heirarchy
-I want a component that will have route to /specificrun.
 The homepage maps out all of the runs. (add an edit and delete button for each run)
 When you click on the run it will link to /specificrun which has all the info for that run on it
 
@@ -85,7 +84,7 @@ Sample return
 - Allow edits to past runs
 - Include a box at the top that will always have the users best run based on distance and speed
 - Include a location input on the form component
-- USe emojis as the ranking system instead of just stars
+- Use emojis/symbols as the ranking system instead of just stars
 
 ## Project Schedule
 
@@ -93,9 +92,9 @@ Sample return
 |---|---| ---|
 |Mar 13-15| Prompt / Wireframes / Component Heirarchy / Timeframes | Complete
 |Mar 15| Project Approval | Complete
-|Mar 15-16| Create Components/ Get,Set Data| Incomplete
+|Mar 15-16| Create Components/ Get,Set Data| Complete
 |Mar 15-16| Create basic CSS for all Media-queries| Incomplete
-|Mar 17-18| MVP | Incomplete
+|Mar 17-18| MVP | Complete
 |Mar 18-19| Advanced CSS/ Darkmode,Lightmode | Incomplete
 |Mar 19-21| PMVP/Finalize CSS | Incomplete
 |March 22| Presentations | Incomplete
@@ -107,15 +106,15 @@ Sample return
 | Proposal | H | 2hrs| 2hrs | 1hrs |
 | Airtable Setup | H | 1hrs| 1hrs | 1hrs |
 | useEffect() | H | 1.5hrs| 2hrs | 2hrs |
-| Header Component | H | 2hrs| hrs | hrs |
+| Header Component | H | 2hrs| 1.5hrs | 1.5hrs |
 | Home Component | H | 2hrs| hrs | 1hrs |
-| RunData Component | H | 4hrs| hrs | 2hrs |
-| NewRunForm Component | H | 3hrs| hrs | 2hrs |
-| Route/Link | H | 4hrs| hrs | hrs |
+| RunData Component | H | 4hrs| 3hrs | 3hrs |
+| NewRunForm Component | H | 3hrs| 4hrs | 4hrs |
+| Route/Link | H | 4hrs| 3hrs | 3hrs |
 | Header CSS | H | 2hrs| hrs | hrs |
-| Home CSS | H | 4hrs| hrs | hrs |
-| Run CSS | H | 4hrs| hrs | hrs |
-| Form CSS | H | 4hrs| hrs | hrs |
+| Home CSS | H | 4hrs| 6hrs | hrs |
+| Run CSS | H | 4hrs| 3hrs | hrs |
+| Form CSS | H | 4hrs| 5hrs | 5hrs |
 | Media-queries | H | 8hrs| hrs | hrs |
 | Total | H | 39.5hrs| hrs | hrs |
 
