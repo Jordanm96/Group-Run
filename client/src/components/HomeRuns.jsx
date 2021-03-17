@@ -14,18 +14,15 @@ function Run(props) {
   };
   return (
     <div className="run-container">
-      {/* This link takes you to the RunData component with all the run info */}
       <Link to={`/run/${props.run.id}`}>
-        {/* Display the name of the runner and date as the link to more info */}
         <h2 className="runner-link">{runnerName}'s Run</h2>
-        {/* <h4>Rating: {satisfactionLevel}/5</h4> */}
+        {/* Potentially include the rating here as well */}
       </Link>
       <h5 className="date-logged">{date}</h5>
 
       <button id="delete-button" onClick={deleteRun}>
         Delete Run
       </button>
-      {/* <p>maybe include the ranking or location of the run here as well</p> */}
     </div>
   );
 }

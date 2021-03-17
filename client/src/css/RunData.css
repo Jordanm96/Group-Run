@@ -1,22 +1,73 @@
 .run-card {
   background-color:rgb(0, 172, 230);
-  /* What the hell is this and why does it work perfectly */
-  /* this is not a good solution with position: fixed. */
-  /* https://stackoverflow.com/questions/48278748/center-a-div-using-javascript */
-  /* position: fixed;
-  left: 50%;  
-  top: 50%;
-  transform: translate(-50%, -50%); */
-  width: 50vh;
+  width: 80vh;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 7r;
+  grid-template-rows: repeat(8, 1fr);
+}
+.run-card p, label {
+  margin: 4px;
+}
+.run-card button {
+  margin: 5px;
 }
 /* On this page I'd like to use grid to put the "date:, distance: time:, etc all the way to the left
 and have the actual user info center-right*/
-h3, h4 {
-  /* background-color: rgb(0, 172, 230); */
+.runner-label{
+  grid-column: 1;
 }
-/* WHY ARE MY BUTTONS NOT GETTING THE BACKGROUND COLOR FOR THE RUN-CARD*/ 
-.run-card-buttons {
-  /* background-color: rgb(0, 172, 230); */
-  margin: 5px;
+.date-label{
+  grid-column: 1;
+}
+.distance-label{
+  grid-column: 1;
+}
+.time-label{
+  grid-column: 1;
+}
+.calories-label{
+  grid-column: 1;
+}
+.difficulty-label{
+  grid-column: 1;
+}
+.comments-label{
+  grid-column: 1;
+}
+.name-entry {
+  grid-column: 2;
+  grid-row: 1;
+}
+.date-entry{
+  grid-column: 2;
+  grid-row: 2;
+}
+.distance-entry{
+  grid-column: 2;
+  grid-row: 3;
+}
+.time-entry{
+  grid-column: 2;
+  grid-row: 4;
+}
+.calories-entry{
+  grid-column: 2;
+  grid-row: 5;
+}
+.difficulty-entry{
+  grid-column: 2;
+  grid-row: 6;
+}
+.comments-entry{
+  grid-column: 2;
+  grid-row: 7;
+}
+#back-button{
+  grid-column: 1;
+  grid-row: 8;
+}
+#edit-button{
+  grid-column: 2;
+  grid-row: 8;
 }

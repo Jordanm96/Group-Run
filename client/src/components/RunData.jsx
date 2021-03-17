@@ -24,19 +24,27 @@ function RunData(props) {
 
   return (
     <div className="run-card">
-      <h3>Runner: {runnerName}</h3>
-      <h3>Date: {date}</h3>
-      <h3>Distance: {distance} miles</h3>
-      <h3>Time: {hours}:{minutes}:{seconds}</h3>
-      <h3>{caloriesBurned} cals</h3>
-      <h3>Rating: {satisfactionLevel}/5</h3>
-      {/* if notes are left blank on form*/}
-      {additionalNotes ? <h4>Comments: {additionalNotes}</h4> : <h4>Comments: No comments listed</h4>}
-      <Link to={`/edit/${run.id}`}>
-        <button className="run-card-buttons">Edit info</button>
+      <label className="runner-label"htmlFor="runner">Runner:</label>
+      <label className="date-label" htmlFor="date">Date:</label>
+      <label className="distance-label" htmlFor="">Distance:</label>
+      <label className="time-label" htmlFor="">Time:</label>
+      <label className="calories-label" htmlFor="">Calories:</label>
+      <label className="difficulty-label" htmlFor="">Difficulty:</label>
+      <label className="comments-label" htmlFor="">Comments:</label>
+
+      <p className="name-entry">{runnerName}</p>
+      <p className="date-entry">{date}</p>
+      <p className="distance-entry">{distance} miles</p>
+      <p className="time-entry">{hours}hrs {minutes}min {seconds}sec</p>
+      <p className="calories-entry">{caloriesBurned}</p>
+      <p className="difficulty-entry">{satisfactionLevel}/5</p>
+      {additionalNotes ? <p className="comments-entry">{additionalNotes}</p> : <p className="comments-entry">No comments</p>}
+      
+      <Link id="back-button" to="/">
+        <button >Back</button>
       </Link>
-      <Link to="/">
-        <button className="run-card-buttons">Back</button>
+      <Link id="edit-button" to={`/edit/${run.id}`}>
+        <button >Edit info</button>
       </Link>
     </div>
   );

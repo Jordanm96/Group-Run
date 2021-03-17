@@ -6,11 +6,21 @@
 body {
   background-color: #001d3d;
 }
-
+a {
+  text-decoration: none;
+  color: white;
+}
 .header-container {
   display: flex;
-  width: fit-content;
+  flex-direction: column;
   background-color: #ffc300;
+  align-items: flex-start;
+  text-decoration: none;
+  /* width: fit-content; */
+}
+.header-title{
+  font-size: x-large;
+  color: #001d3d;
 }
 #nav-button {
   background-color:rgb(0, 172, 230);
