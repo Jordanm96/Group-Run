@@ -20,6 +20,7 @@ function App() {
     };
     getRuns();
   }, [toggleFetch]);
+
   return (
     <div>
       <Route path="/">

@@ -1,0 +1,21 @@
+.run-card {
+  background-color:rgb(0, 172, 230);
+  position: fixed;
+  /* What the hell is this and why does it work perfectly */
+  /* https://stackoverflow.com/questions/48278748/center-a-div-using-javascript */
+  left: 50%;  
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vh;
+  height: 50vh;
+}
+/* On this page I'd like to use grid to put the "date:, distance: time:, etc all the way to the left
+and have the actual user info center-right*/
+h3, h4 {
+  background-color: rgb(0, 172, 230);
+}
+ /* WHY ARE MY BUTTONS NOT GETTING THE BACKGROUND COLOR FOR THE RUN-CARD*/ 
+/* .run-card-buttons {
+  background-color: rgb(0, 172, 230);
+
+} */

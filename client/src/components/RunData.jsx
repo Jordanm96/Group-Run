@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom";
+import "../css/RunData.css";
 
 function RunData(props) {
   const params = useParams();
@@ -23,8 +24,6 @@ function RunData(props) {
 
   return (
     <div className="run-card">
-      <h2>RunData page</h2>
-      {/* <label>User: {runnerName}</label> */}
       <h3>Runner: {runnerName}</h3>
       <h3>Date: {date}</h3>
       <h3>Distance: {distance} miles</h3>
@@ -32,17 +31,15 @@ function RunData(props) {
         Time: {hours}:{minutes}:{seconds}
       </h3>
       <h3>{caloriesBurned} cals</h3>
-      <h4>Rating: {satisfactionLevel}/5</h4>
-      {/* if notes are left blank on form, do nothing */}
-      {additionalNotes ? <p>Comments: {additionalNotes}</p> : <></>}
+      <h3>Rating: {satisfactionLevel}/5</h3>
+      {/* if notes are left blank on form*/}
+      {additionalNotes ? <h4>Comments: {additionalNotes}</h4> : <h4>Comments: No comments listed</h4>}
       <Link to={`/edit/${run.id}`}>
-        <button>Edit info</button>
+        <button className="run-card-buttons">Edit info</button>
       </Link>
       <Link to="/">
-        <button>Back</button>
+        <button className="run-card-buttons">Back</button>
       </Link>
-
-      {/* <h2>Edit button/Link here</h2>*/}
     </div>
   );
 }
