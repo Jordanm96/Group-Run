@@ -4,36 +4,22 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 3fr 7r;
-  grid-template-rows: repeat(8, 1fr);
+  /* grid-template-rows: repeat(8, 1fr); */
 }
-.run-card p, label {
+.run-card p, .run-card label {
   margin: 4px;
+
 }
 .run-card button {
   margin: 5px;
 }
 /* On this page I'd like to use grid to put the "date:, distance: time:, etc all the way to the left
 and have the actual user info center-right*/
-.runner-label{
+.run-card label {
   grid-column: 1;
 }
-.date-label{
-  grid-column: 1;
-}
-.distance-label{
-  grid-column: 1;
-}
-.time-label{
-  grid-column: 1;
-}
-.calories-label{
-  grid-column: 1;
-}
-.rating-label{
-  grid-column: 1;
-}
-.comments-label{
-  grid-column: 1;
+.run-card p {
+  grid-column: 2;
 }
 .name-entry {
   grid-column: 2;
@@ -63,11 +49,13 @@ and have the actual user info center-right*/
   grid-column: 2;
   grid-row: 7;
 }
-#home-button{
+.home-button{
   grid-column: 1;
   grid-row: 8;
+  cursor: pointer;
 }
-#edit-button{
+.edit-button{
   grid-column: 2;
   grid-row: 8;
+  cursor: pointer;
 }

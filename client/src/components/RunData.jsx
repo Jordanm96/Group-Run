@@ -23,7 +23,7 @@ function RunData(props) {
   } = run.fields;
 
   return (
-    <div className="run-card">
+    <div className="run-card ">
       <label className="runner-label"htmlFor="runner">Runner:</label>
       <label className="date-label" htmlFor="date">Date:</label>
       <label className="distance-label" htmlFor="">Distance:</label>
@@ -39,12 +39,12 @@ function RunData(props) {
       <p className="calories-entry">{caloriesBurned}</p>
       <p className="difficulty-entry">{satisfactionLevel}/5</p>
       {additionalNotes ? <p className="comments-entry">{additionalNotes}</p> : <p className="comments-entry">No comments</p>}
-      
-      <Link id="home-button" to="/">
-        <button >Home</button>
+
+      <Link class="home-button" to="/">
+        <button class="home-button" >Home</button>
       </Link>
-      <Link id="edit-button" to={`/edit/${run.id}`}>
-        <button >Edit info</button>
+      <Link class="edit-button" to={`/edit/${run.id}`}>
+        <button class="edit-button">Edit info</button>
       </Link>
     </div>
   );

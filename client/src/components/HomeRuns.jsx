@@ -12,16 +12,16 @@ function Run(props) {
     await axios.delete(runURL, config);
     props.setToggleFetch((curr) => !curr);
   };
+
   return (
     <div className="run-container">
       <Link to={`/run/${props.run.id}`}>
         <h2 className="runner-link">{runnerName}'s Run --></h2>
-        {/* Potentially include the rating here as well */}
       </Link>
       <p className="rating">Rating: {satisfactionLevel}/5</p>
       <p className="date-logged">{date}</p>
       <button id="delete-button" onClick={deleteRun}>
-        Delete Run
+        🗑
       </button>
     </div>
   );

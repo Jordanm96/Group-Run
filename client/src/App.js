@@ -13,10 +13,12 @@ import Footer from "./components/Footer";
 function App() {
   const [runs, setRuns] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(true);
+
   useEffect(() => {
     const getRuns = async () => {
       const resp = await axios.get(baseURL, config);
-      setRuns(resp.data.records);
+      const records = resp.data.records.sort((a, b) => new Date(b.fields.date) - new Date(a.fields.date) )
+      setRuns(records);
     };
     getRuns();
   }, [toggleFetch]);

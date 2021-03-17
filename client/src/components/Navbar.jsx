@@ -2,12 +2,11 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div>
-      <nav id= "nav-button">
+    <div className="add-button-div">
+      {/* <nav id= "nav-button"> */}
         {/* <Link to="/">Home</Link> */}
-        <Link to = "/add">Add a run</Link>
-        {/* Maybe have a link to the edit component here */}
-      </nav>
+        <Link classname="add-button" to = "/add">Add a run</Link>
+      {/* </nav> */}
       
     </div>
   );

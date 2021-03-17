@@ -163,11 +163,11 @@ function NewRunForm(props) {
         </label>
         
         <div className="form-buttons">
-          <button id="add=button" type="submit">
+          <button className="form-buttons" id="add=button" type="submit">
             Add
           </button>
           <Link to="/">
-            <button id="cancel-button">Cancel</button>
+            <button className="form-buttons" id="cancel-button">Cancel</button>
           </Link>
         </div>
       </div>

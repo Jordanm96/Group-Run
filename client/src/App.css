@@ -23,8 +23,8 @@ a {
   font-size: x-large;
   color: #001d3d;
 }
-#nav-button {
+.add-button-div {
   background-color:rgb(0, 172, 230);
   margin: 0 auto;
-  width: 80vh;
+  width: fit-content;
 }
