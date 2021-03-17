@@ -1,7 +1,7 @@
 .run-container {
   background-color: rgb(0, 172, 230);
   width: 80vh;
-  margin: 30px auto;
+  margin: 20px auto;
   display: grid;
   /* grid-template-columns: repeat(4,1fr); */
   grid-template-columns: 7fr 3fr;
@@ -9,6 +9,8 @@
   border: 2px solid lightcoral;
 }
 
+/* This is my runnerName link
+Add a hover effect so people know it is a button to RunData */
 a {
   grid-column: 1;
   grid-row: 1;
@@ -21,7 +23,6 @@ a {
   grid-column: 3;
   grid-row: 1;
 }
-
 #delete-button {
   margin: 20px;
   grid-row: 2;

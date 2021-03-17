@@ -16,6 +16,7 @@ a {
   background-color: #ffc300;
   align-items: flex-start;
   text-decoration: none;
+  margin: 10px;
   /* width: fit-content; */
 }
 .header-title{
