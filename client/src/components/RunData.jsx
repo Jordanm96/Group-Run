@@ -27,9 +27,7 @@ function RunData(props) {
       <h3>Runner: {runnerName}</h3>
       <h3>Date: {date}</h3>
       <h3>Distance: {distance} miles</h3>
-      <h3>
-        Time: {hours}:{minutes}:{seconds}
-      </h3>
+      <h3>Time: {hours}:{minutes}:{seconds}</h3>
       <h3>{caloriesBurned} cals</h3>
       <h3>Rating: {satisfactionLevel}/5</h3>
       {/* if notes are left blank on form*/}

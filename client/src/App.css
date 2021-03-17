@@ -1,15 +1,19 @@
 * {
   /* border: 2px solid lightcoral; */
-  /* width: fit-content; */
   block-size: fit-content;
   text-align: center;
-  background-color: rgb(0, 115, 153);
 }
+body {
+  background-color: #001d3d;
+}
+
 .header-container {
   display: flex;
   width: fit-content;
+  background-color: #ffc300;
 }
-/* .home-container { 
-  Does nothing because my run-container Link takes up the width of the page 
-  display: flex;
-} */
+#nav-button {
+  background-color:rgb(0, 172, 230);
+  margin: 0 auto;
+  width: 80vh;
+}
