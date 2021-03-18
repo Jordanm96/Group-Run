@@ -29,8 +29,8 @@ a {
   grid-column: 3;
   width: fit-content;
   border: 0px;
-  cursor: pointer;
   background-color: transparent;
   font-size: 24px;
+  cursor: pointer;
   /* box-shadow: 3px 3px 3px grey; */
 }

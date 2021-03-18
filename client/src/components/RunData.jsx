@@ -41,10 +41,10 @@ function RunData(props) {
       {additionalNotes ? <p className="comments-entry">{additionalNotes}</p> : <p className="comments-entry">No comments</p>}
 
       <Link class="home-button" to="/">
-        <button class="home-button" >Home</button>
+        <button class="home-button" >🏠</button>
       </Link>
       <Link class="edit-button" to={`/edit/${run.id}`}>
-        <button class="edit-button">Edit info</button>
+        <button class="edit-button">📝</button>
       </Link>
     </div>
   );

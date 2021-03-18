@@ -52,10 +52,16 @@ and have the actual user info center-right*/
 .home-button{
   grid-column: 1;
   grid-row: 8;
+  border: 0px;
+  background-color: transparent;
+  font-size: 40px;
   cursor: pointer;
 }
 .edit-button{
   grid-column: 2;
   grid-row: 8;
+  border: 0px;
+  background-color: transparent;
+  font-size: 40px;
   cursor: pointer;
 }
