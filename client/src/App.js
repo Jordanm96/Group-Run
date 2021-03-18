@@ -24,7 +24,7 @@ function App() {
   }, [toggleFetch]);
 
   return (
-    <div>
+    <div className = "body">
       <Route path="/">
         <Header />
       </Route>

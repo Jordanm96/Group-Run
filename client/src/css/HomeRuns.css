@@ -3,7 +3,6 @@
   width: 80vh;
   margin: 20px auto;
   display: grid;
-  /* grid-template-columns: repeat(4,1fr); */
   grid-template-columns: 7fr 3fr;
   grid-template-rows: repeat(2,1fr);
   border: 2px solid lightcoral;
@@ -22,6 +21,7 @@ a {
 .date-logged {
   grid-column: 3;
   grid-row: 1;
+  padding: 20px 20px 0 0;
 }
 #delete-button {
   margin: 20px;
@@ -33,4 +33,14 @@ a {
   font-size: 24px;
   cursor: pointer;
   /* box-shadow: 3px 3px 3px grey; */
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) { 
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.run-container {
+  width: 53vh;
+}
 }
