@@ -1,12 +1,10 @@
 .run-card {
   background-color:rgb(0, 172, 230);
-  width: 80vh;
+  width: 50vh;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 3fr 7fr;
   justify-items: start;
-
-  /* grid-template-rows: repeat(8, 1fr); */
 }
 .run-card p, .run-card label {
   margin: 4px;
@@ -15,8 +13,6 @@
 .run-card button {
   margin: 5px;
 }
-/* On this page I'd like to use grid to put the "date:, distance: time:, etc all the way to the left
-and have the actual user info center-right*/
 .run-card label {
   grid-column: 1;
 }

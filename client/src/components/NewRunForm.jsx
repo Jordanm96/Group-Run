@@ -108,7 +108,7 @@ function NewRunForm(props) {
           mile(s)
         </label>
 
-        <p id="time">Time</p>
+        <p id="time">Duration:</p>
         <label className="hours" htmlFor="hours">
           Hours:{" "}
           <input
@@ -162,18 +162,32 @@ function NewRunForm(props) {
             onChange={(e) => setCaloriesBurned(e.target.valueAsNumber)}
           />
         </label>
-
+        {/* <div className = "emojis">
+          <p>☠️</p>
+          <p>😵</p>
+          <p>😤</p>
+          <p>😁</p>
+          <p>🤩</p>
+        </div> */}
         {/* Will have to find a way for the satisfaction level to be converted to stars so they are logged in airtable */}
         {/* create a drop down method here for the input 1-5 */}
         <label className="satisfaction-level" htmlFor="satisfactionLevel">
-          How was it?{" "}
-          <input
+          How was it?{" "}</label>
+        <input
+          className = "range-bar"
             type="range"
             // value="{satisfactionLevel}"
             min="1"
             max="5"
             onChange={(e) => setSatisfactionLevel(e.target.valueAsNumber)}
           />
+        <div className = "emojis">
+          <p>☠️</p>
+          <p>😵</p>
+          <p>😤</p>
+          <p>😁</p>
+          <p>🤩</p>
+        </div>
           {/* <select> */}
           {/* <option type = "number" value="{satisfactionLevel}" onChange={(e) => setSatisfactionLevel(e.target.value)}>🤩</option> */}
           {/* <option type = "number" value="{satisfactionLevel}" onChange={(e) => setSatisfactionLevel(e.target.valueAsNumber)}>5</option>
@@ -182,7 +196,7 @@ function NewRunForm(props) {
           <option type = "number" value="{satisfactionLevel}" onChange={(e) => setSatisfactionLevel(e.target.valueAsNumber)}>2</option>
           <option type = "number" value="{satisfactionLevel}" onChange={(e) => setSatisfactionLevel(e.target.valueAsNumber)}>1</option>
         </select> */}
-        </label>
+        
 
         <label className="additional-notes" htmlFor="additionalNotes">
           Notes (optional):{" "}
