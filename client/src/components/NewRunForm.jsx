@@ -9,14 +9,14 @@ function NewRunForm(props) {
   // I want the useState value for date to be set to whatever day it currently is
   const [date, setDate] = useState("");
   // const [date, setDate] = useState(new Date().toLocaleDateString('en-US'));
-  
+
   const [runnerName, setRunnerName] = useState("");
-  const [distance, setDistance] = useState("");
+  const [distance, setDistance] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
-  const [caloriesBurned, setCaloriesBurned] = useState("");
-  const [satisfactionLevel, setSatisfactionLevel] = useState(5);
+  const [caloriesBurned, setCaloriesBurned] = useState(0);
+  const [satisfactionLevel, setSatisfactionLevel] = useState();
   const [additionalNotes, setAdditionalNotes] = useState("");
   const history = useHistory();
   const params = useParams();
@@ -75,6 +75,9 @@ function NewRunForm(props) {
             type="text"
             value={runnerName}
             onChange={(e) => setRunnerName(e.target.value)}
+            onInput={(e) =>
+              (e.target.value = ("" + e.target.value).toUpperCase())
+            }
           />
         </label>
         <label className="date" htmlFor="date">
@@ -83,7 +86,7 @@ function NewRunForm(props) {
             required
             id="date"
             type="date"
-            defaultValue = {date}
+            defaultValue={date}
             // onFocus={(e) => e.target.type = 'date'}
             value={date}
             onChange={(e) => setDate(e.target.value)}
@@ -96,6 +99,7 @@ function NewRunForm(props) {
             required
             id="distance"
             type="number"
+            min="0"
             value={distance}
             onChange={(e) => setDistance(e.target.valueAsNumber)}
           />{" "}
@@ -109,6 +113,7 @@ function NewRunForm(props) {
             id="hours"
             className="duration"
             type="number"
+            min="0"
             value={hours}
             onChange={(e) => setHours(e.target.valueAsNumber)}
           />
@@ -120,6 +125,8 @@ function NewRunForm(props) {
             id="minutes"
             className="duration"
             type="number"
+            min="0"
+            max="59"
             value={minutes}
             onChange={(e) => setMinutes(e.target.valueAsNumber)}
           />
@@ -131,6 +138,8 @@ function NewRunForm(props) {
             id="seconds"
             className="duration"
             type="number"
+            min="0"
+            max="59"
             value={seconds}
             onChange={(e) => setSeconds(e.target.valueAsNumber)}
           />
@@ -142,6 +151,7 @@ function NewRunForm(props) {
             required
             id="caloriesBurned"
             type="number"
+            min="0"
             value={caloriesBurned}
             onChange={(e) => setCaloriesBurned(e.target.valueAsNumber)}
           />
@@ -150,23 +160,22 @@ function NewRunForm(props) {
         {/* Will have to find a way for the satisfaction level to be converted to stars so they are logged in airtable */}
         {/* create a drop down method here for the input 1-5 */}
         <label className="satisfaction-level" htmlFor="satisfactionLevel">
-          How was it? {" "}
-          {/* POST https://api.airtable.com/v0/app4VQ6Mn79yEhhGn/runs 422 (Unprocessable Entity) */}
-          <select>
-          <option type = "number" value="{satisfactionLevel}" onChange={(e) => setSatisfactionLevel(e.target.valueAsNumber)}>5</option>
+          How was it?{" "}
+          <input
+            type="range"
+            // value="{satisfactionLevel}"
+            min="1"
+            max="5"
+            onChange={(e) => setSatisfactionLevel(e.target.valueAsNumber)}
+          />
+          {/* <select> */}
+          {/* <option type = "number" value="{satisfactionLevel}" onChange={(e) => setSatisfactionLevel(e.target.value)}>🤩</option> */}
+          {/* <option type = "number" value="{satisfactionLevel}" onChange={(e) => setSatisfactionLevel(e.target.valueAsNumber)}>5</option>
           <option type = "number" value="{satisfactionLevel}" onChange={(e) => setSatisfactionLevel(e.target.valueAsNumber)}>4</option>
           <option type = "number" value="{satisfactionLevel}" onChange={(e) => setSatisfactionLevel(e.target.valueAsNumber)}>3</option>
           <option type = "number" value="{satisfactionLevel}" onChange={(e) => setSatisfactionLevel(e.target.valueAsNumber)}>2</option>
           <option type = "number" value="{satisfactionLevel}" onChange={(e) => setSatisfactionLevel(e.target.valueAsNumber)}>1</option>
-        </select>
-          {/* <input
-            required
-            id="satisfactionLevel"
-            type="number"
-            placeholder="1-5"
-            value={satisfactionLevel}
-            onChange={(e) => setSatisfactionLevel(e.target.valueAsNumber)}
-          /> */}
+        </select> */}
         </label>
 
         <label className="additional-notes" htmlFor="additionalNotes">
@@ -178,13 +187,15 @@ function NewRunForm(props) {
             onChange={(e) => setAdditionalNotes(e.target.value)}
           />
         </label>
-        
+
         <div className="form-buttons">
           <button className="form-buttons" id="add=button" type="submit">
             Add
           </button>
           <Link to="/">
-            <button className="form-buttons" id="cancel-button">Cancel</button>
+            <button className="form-buttons" id="cancel-button">
+              Cancel
+            </button>
           </Link>
         </div>
       </div>

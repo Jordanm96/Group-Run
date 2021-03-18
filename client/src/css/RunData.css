@@ -4,6 +4,8 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 3fr 7r;
+  justify-items: start;
+
   /* grid-template-rows: repeat(8, 1fr); */
 }
 .run-card p, .run-card label {
@@ -56,6 +58,7 @@ and have the actual user info center-right*/
   background-color: transparent;
   font-size: 40px;
   cursor: pointer;
+  justify-self: start;
 }
 .edit-button{
   grid-column: 2;
@@ -64,4 +67,6 @@ and have the actual user info center-right*/
   background-color: transparent;
   font-size: 40px;
   cursor: pointer;
+  justify-self: end;
+  
 }
