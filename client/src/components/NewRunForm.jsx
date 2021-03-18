@@ -172,7 +172,7 @@ function NewRunForm(props) {
         {/* Will have to find a way for the satisfaction level to be converted to stars so they are logged in airtable */}
         {/* create a drop down method here for the input 1-5 */}
         <label className="satisfaction-level" htmlFor="satisfactionLevel">
-          How was it?{" "}</label>
+          How are you feeling?{" "}</label>
         <input
           className = "range-bar"
             type="range"
@@ -182,10 +182,10 @@ function NewRunForm(props) {
             onChange={(e) => setSatisfactionLevel(e.target.valueAsNumber)}
           />
         <div className = "emojis">
-          <p>☠️</p>
-          <p>😵</p>
+          <p>💀</p>
+          <p>🥵</p>
           <p>😤</p>
-          <p>😁</p>
+          <p>😎</p>
           <p>🤩</p>
         </div>
           {/* <select> */}

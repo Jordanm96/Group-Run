@@ -16,7 +16,7 @@
 .edit-run-here{
   background-color: rgb(0, 172, 230);
   grid-column: 4 / 6;
-  width: 90vh;
+  width: 40%;
   margin: 0 auto;
 }
 .user{
@@ -103,6 +103,12 @@ background-color: white;
   width: 30px;
 } 
 #hours {
+  width:30px;
+}
+#minutes {
+  width: 30px;
+}
+#seconds {
   width: 30px;
 }
 #caloriesBurned {
@@ -122,15 +128,15 @@ background-color: white;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: rgb(0, 172, 230);
-    width: 50vh;
+    width: 80vw;
     margin: 0 auto;
     align-items: center;
   }
   .add-run-here{
-    width: 50vh;
+    width: 80vw;
   }
   .edit-run-here {
-    width: 50vh;
+    width: 80vw;
   }
   .user {
     grid-column: 1/3;
