@@ -9,6 +9,7 @@ function NewRunForm(props) {
   // I want the useState value for date to be set to whatever day it currently is
   const [date, setDate] = useState("");
   // const [date, setDate] = useState(new Date().toLocaleDateString('en-US'));
+  
   const [runnerName, setRunnerName] = useState("");
   const [distance, setDistance] = useState("");
   const [hours, setHours] = useState(0);
@@ -57,6 +58,9 @@ function NewRunForm(props) {
     props.setToggleFetch((curr) => !curr);
     history.push("/");
   };
+  // var curr = new Date();
+  // curr.setDate(curr.getDate() + 3);
+  // var date = curr.toISOString().substr(0,10);
 
   // document.getElementById('date').valueAsDate = new Date();
 
@@ -79,6 +83,7 @@ function NewRunForm(props) {
             required
             id="date"
             type="date"
+            defaultValue = {date}
             // onFocus={(e) => e.target.type = 'date'}
             value={date}
             onChange={(e) => setDate(e.target.value)}
