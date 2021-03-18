@@ -74,6 +74,7 @@ function NewRunForm(props) {
             id="runnerName"
             type="text"
             value={runnerName}
+            placeholder="NAME"
             onChange={(e) => setRunnerName(e.target.value)}
             onInput={(e) =>
               (e.target.value = ("" + e.target.value).toUpperCase())
@@ -108,9 +109,10 @@ function NewRunForm(props) {
           mile(s)
         </label>
 
+      <div className = "duration-grid">
         <p id="time">Duration:</p>
         <label className="hours" htmlFor="hours">
-          Hours:{" "}
+          Hrs:{" "}
           <input
             id="hours"
             className="duration"
@@ -121,7 +123,6 @@ function NewRunForm(props) {
             onChange={(e) => setHours(e.target.valueAsNumber)}
           />
         </label>
-
         <label className="minutes" htmlFor="minutes">
           Min:{" "}
           <input
@@ -135,7 +136,6 @@ function NewRunForm(props) {
             onChange={(e) => setMinutes(e.target.valueAsNumber)}
           />
         </label>
-
         <label className="seconds" htmlFor="seconds">
           Sec:{" "}
           <input
@@ -149,7 +149,7 @@ function NewRunForm(props) {
             onChange={(e) => setSeconds(e.target.valueAsNumber)}
           />
         </label>
-
+        </div>
         <label className="calories-burned" htmlFor="caloriesBurned">
           Calories:{" "}
           <input
