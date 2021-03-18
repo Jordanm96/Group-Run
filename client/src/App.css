@@ -10,6 +10,16 @@ a {
   text-decoration: none;
   color: white;
 }
+/* Let's put this in the home-container div */
+/* This is our add run button  */
+.create-new {
+  display: flex;
+  align-self: center;
+  font-size: 50px;
+  border: 10px solid red;
+  box-sizing: border-box;
+  margin: 0 700px 0 0;
+}
 .body {
   padding: 20px 0px;
   display: flex;

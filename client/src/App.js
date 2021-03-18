@@ -1,4 +1,3 @@
-import "./App.css";
 import { Route } from "react-router-dom";
 import { baseURL, config } from "./services"; //This line is getting our api url
 import axios from "axios";
@@ -9,6 +8,7 @@ import Navbar from "./components/Navbar";
 import NewRunForm from "./components/NewRunForm";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import "./App.css";
 
 function App() {
   const [runs, setRuns] = useState([]);
@@ -31,7 +31,7 @@ function App() {
 
       <Route exact path="/">
         <Navbar />
-        <div className="home-containter">
+        <div className="home-container">
           {runs.map((run) => (
             <HomeRuns key={run.id} run={run} setToggleFetch={setToggleFetch} />
           ))}
