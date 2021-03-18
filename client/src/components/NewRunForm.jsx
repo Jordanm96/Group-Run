@@ -8,13 +8,14 @@ import "../css/NewRunForm.css";
 function NewRunForm(props) {
   // I want the useState value for date to be set to whatever day it currently is
   const [date, setDate] = useState("");
+  // const [date, setDate] = useState(new Date().toLocaleDateString('en-US'));
   const [runnerName, setRunnerName] = useState("");
   const [distance, setDistance] = useState("");
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
   const [caloriesBurned, setCaloriesBurned] = useState("");
-  const [satisfactionLevel, setSatisfactionLevel] = useState("");
+  const [satisfactionLevel, setSatisfactionLevel] = useState(5);
   const [additionalNotes, setAdditionalNotes] = useState("");
   const history = useHistory();
   const params = useParams();
@@ -57,6 +58,8 @@ function NewRunForm(props) {
     history.push("/");
   };
 
+  // document.getElementById('date').valueAsDate = new Date();
+
   return (
     <form onSubmit={handleSubmit}>
       <div className="form-container">
@@ -76,6 +79,7 @@ function NewRunForm(props) {
             required
             id="date"
             type="date"
+            // onFocus={(e) => e.target.type = 'date'}
             value={date}
             onChange={(e) => setDate(e.target.value)}
           />{" "}
@@ -142,14 +146,22 @@ function NewRunForm(props) {
         {/* create a drop down method here for the input 1-5 */}
         <label className="satisfaction-level" htmlFor="satisfactionLevel">
           How was it? {" "}
-          <input
+          {/* POST https://api.airtable.com/v0/app4VQ6Mn79yEhhGn/runs 422 (Unprocessable Entity) */}
+          <select>
+          <option type = "number" value="{satisfactionLevel}" onChange={(e) => setSatisfactionLevel(e.target.valueAsNumber)}>5</option>
+          <option type = "number" value="{satisfactionLevel}" onChange={(e) => setSatisfactionLevel(e.target.valueAsNumber)}>4</option>
+          <option type = "number" value="{satisfactionLevel}" onChange={(e) => setSatisfactionLevel(e.target.valueAsNumber)}>3</option>
+          <option type = "number" value="{satisfactionLevel}" onChange={(e) => setSatisfactionLevel(e.target.valueAsNumber)}>2</option>
+          <option type = "number" value="{satisfactionLevel}" onChange={(e) => setSatisfactionLevel(e.target.valueAsNumber)}>1</option>
+        </select>
+          {/* <input
             required
             id="satisfactionLevel"
             type="number"
             placeholder="1-5"
             value={satisfactionLevel}
             onChange={(e) => setSatisfactionLevel(e.target.valueAsNumber)}
-          />
+          /> */}
         </label>
 
         <label className="additional-notes" htmlFor="additionalNotes">
