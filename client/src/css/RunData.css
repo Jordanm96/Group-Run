@@ -3,7 +3,7 @@
   width: 80vh;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 3fr 7r;
+  grid-template-columns: 3fr 7fr;
   justify-items: start;
 
   /* grid-template-rows: repeat(8, 1fr); */
