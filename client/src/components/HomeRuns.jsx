@@ -16,13 +16,14 @@ function Run(props) {
   return (
     <div className="run-container">
       <Link className="runner-link" to={`/run/${props.run.id}`}>
-        {/* <h2><i className="fas fa-running"></i> </h2> */}
-        <h2><i className="fas fa-running"></i> {runnerName}'S RUN</h2>
+        <h2>
+          <i className="fas fa-running"></i> {runnerName}'S RUN
+        </h2>
       </Link>
       <p className="rating">Rating: {satisfactionLevel}/5</p>
       <p className="date-logged">{date}</p>
       <button id="delete-button" onClick={deleteRun}>
-      <i class="fas fa-trash"></i>
+        <i class="fas fa-trash"></i>
       </button>
     </div>
   );
