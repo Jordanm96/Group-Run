@@ -3,10 +3,13 @@
   grid-template-columns: repeat(8, 1fr);
   background-color: rgb(0, 172, 230);
   width: 40%;
+  height: 80%;
   margin: 0 auto;
   grid-gap: 10px;
+  text-align: center;
 }
 .add-run-here{
+  text-align: center;
   background-color: rgb(0, 172, 230);
   grid-column: 4 / 6;
   width: 40%;
@@ -14,6 +17,7 @@
   padding: 20px 0;
 }
 .edit-run-here{
+  text-align: center;
   background-color: rgb(0, 172, 230);
   grid-column: 4 / 6;
   width: 40%;

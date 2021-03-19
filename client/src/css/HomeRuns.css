@@ -1,5 +1,4 @@
-/* home-container: I want to display two runs per line if possible
-not sure why flex is having 0 effect! */
+
 .home-container {
     display: flex;
     flex-wrap: wrap;
@@ -22,12 +21,16 @@ not sure why flex is having 0 effect! */
 
 /* This is my runnerName link
 Add a hover effect so people know it is a button to RunData */
-a {
+.runner-link {
   grid-column: 1;
   grid-row: 1;
   width: fit-content;
   align-self: center;
   justify-self: center;
+}
+.runner-link :hover {
+  color: #ff7a59;
+  transform: scale(1.1);
 }
 .rating{
   grid-column: 1;
@@ -53,10 +56,17 @@ a {
   background-color: transparent;
   font-size: 24px;
   cursor: pointer;
-  /* box-shadow: 3px 3px 3px grey; */
+  align-self: center;
+  justify-self: center;
+}
+#delete-button :hover {
+  
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) { 
 .run-container {
-  width: 53vh;
+  width: 85%;
+}
+.runner-link {
+  font-size: 10px;
 }
 }

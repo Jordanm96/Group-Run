@@ -15,8 +15,8 @@ function Run(props) {
 
   return (
     <div className="run-container">
-      <Link to={`/run/${props.run.id}`}>
-        <h2 className="runner-link">{runnerName}'S RUN --></h2>
+      <Link className="runner-link" to={`/run/${props.run.id}`}>
+        <h2>{runnerName}'S RUN ➡️</h2>
       </Link>
       <p className="rating">Rating: {satisfactionLevel}/5</p>
       <p className="date-logged">{date}</p>
