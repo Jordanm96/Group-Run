@@ -3,7 +3,7 @@
   flex-direction: column;
   background-color: #343763;
   margin: 0 auto;
-  width: 70%;
+  width: 60%;
   border-radius: 15px;
 }
 .run-container {
@@ -14,6 +14,7 @@
   grid-template-columns: 7fr 3fr;
   grid-template-rows: repeat(2,1fr);
   border-radius: 15px;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 .runner-link {
@@ -24,6 +25,9 @@
   justify-self: center;
   font-size: 14px;
   color: white;
+}
+.runner-link :hover{
+  transform: scale(1.2);
 }
 .rating{
   grid-column: 1;

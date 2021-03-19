@@ -13,7 +13,6 @@ function Header() {
           <h3 className = "add-run">Add Run</h3>
         </Link>
       </div>
-      {/* <img src = "https://www.clipartkey.com/mpngs/m/18-186620_stick-figure-stick-man-running-clip-art-running.png" alt = "running man"/> */}
     </header>
   );
 }

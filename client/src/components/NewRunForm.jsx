@@ -204,7 +204,7 @@ function NewRunForm(props) {
           <button className="form-buttons" id="add=button" type="submit">
             Add
           </button>
-          <Link to="/">
+          <Link className = "form-buttons" to="/">
             <button className="form-buttons" id="cancel-button">
               Cancel
             </button>

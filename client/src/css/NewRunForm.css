@@ -8,6 +8,8 @@
   grid-gap: 10px;
   text-align: center;
   border-radius: 15px;
+  font-family: 'Blinker', sans-serif;
+  font-size: 20px;
 }
 .add-run-here{
   text-align: center;
@@ -17,6 +19,8 @@
   margin: 10px auto;
   padding: 20px 0;
   border-radius: 150px;
+  font-size: 30px;
+
 }
 .edit-run-here{
   text-align: center;
@@ -26,6 +30,8 @@
   margin: 10px auto;
   padding: 20px 0;
   border-radius: 150px;
+  font-size: 30px;
+
 }
 .user{
   grid-column: 4 / 5;
@@ -100,6 +106,10 @@
   cursor: pointer;
   color: black;
   border-radius: 10px;
+  /* border: none; */
+}
+.form-buttons :hover {
+  color: black;
 }
 /* Input fields */
 input {

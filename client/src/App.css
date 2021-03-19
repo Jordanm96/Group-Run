@@ -1,5 +1,10 @@
+
 * {
   color: white;
+
+}
+* input {
+
 }
 body {
   background-color: #282b4b;
@@ -10,8 +15,7 @@ a {
 }
 a :hover {
   color: #0bfc03;
-  transform: scale(1.2);
-
+  /* transform: scale(1.2); */
 }
 .body {
   padding: 20px 0px;
