@@ -40,7 +40,7 @@
 .date-logged {
   grid-column: 3;
   grid-row: 1;
-  padding: 0 30px 0 0;
+  padding: 0 30px;
   width: fit-content;
   align-self: center;
   justify-self: center;
@@ -55,8 +55,8 @@
   background-color: transparent;
   font-size: 24px;
   cursor: pointer;
-  align-self: center;
-  justify-self: center;
+  align-self: flex-end;
+  justify-self: flex-end;
 }
 #delete-button :hover{
   color: red;
