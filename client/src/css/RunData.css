@@ -1,50 +1,47 @@
 .run-card {
   background-color:rgb(0, 172, 230);
-  width: 50vh;
+  width: 40%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 3fr 7fr;
+  grid-template-columns: 5fr 3fr 7fr;
   justify-items: start;
 }
 .run-card p, .run-card label {
   margin: 4px;
-
 }
 .run-card button {
   margin: 5px;
 }
 .run-card label {
   grid-column: 1;
+  justify-self: center;
+  padding: 15px;
 }
 .run-card p {
-  grid-column: 2;
+  grid-column: 3;
+  align-self: center;
+  justify-self: start;
 }
 .name-entry {
-  grid-column: 2;
   grid-row: 1;
 }
 .date-entry{
-  grid-column: 2;
   grid-row: 2;
 }
 .distance-entry{
-  grid-column: 2;
   grid-row: 3;
 }
 .time-entry{
-  grid-column: 2;
   grid-row: 4;
 }
 .calories-entry{
-  grid-column: 2;
   grid-row: 5;
 }
 .difficulty-entry{
-  grid-column: 2;
   grid-row: 6;
 }
 .comments-entry{
-  grid-column: 2;
+  justify-self: start;
   grid-row: 7;
 }
 .home-button{
@@ -57,7 +54,7 @@
   justify-self: start;
 }
 .edit-button{
-  grid-column: 2;
+  grid-column: 3;
   grid-row: 8;
   border: 0px;
   background-color: transparent;
@@ -67,8 +64,11 @@
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) { 
   .run-card {
-    width: 53vh;
+    width: 80%;
     justify-items: center;
+  }
+  .run-card p {
+    justify-self: center;;
   }
   .home-button {
     font-size: 30px;
@@ -78,4 +78,5 @@
     font-size: 30px;
     justify-self: center;
   }
+
 }

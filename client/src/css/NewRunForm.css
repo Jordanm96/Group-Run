@@ -32,7 +32,7 @@
   margin: 5px;
 }
 .duration-grid {
-  grid-column: 4 /6;
+  grid-column: 4 / 6;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: 1fr 1fr;
@@ -49,7 +49,6 @@
 }
 .minutes {
   grid-row: 2;
-
 }
 .seconds {
   grid-row: 2;
