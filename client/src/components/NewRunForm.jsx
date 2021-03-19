@@ -6,10 +6,8 @@ import "../css/NewRunForm.css";
 // Import params here for the edit PUT request
 
 function NewRunForm(props) {
-  // I want the useState value for date to be set to whatever day it currently is
-  const [date, setDate] = useState(new Date().toISOString().substring(0,10));
-  // const [date, setDate] = useState(new Date().toLocaleDateString('en-US'));
-
+  // const [date, setDate] = useState(new Date().toISOString().substring(0, 10));
+  const [date, setDate] = useState("");
   const [runnerName, setRunnerName] = useState("");
   const [distance, setDistance] = useState("");
   const [hours, setHours] = useState("");
@@ -24,7 +22,8 @@ function NewRunForm(props) {
   useEffect(() => {
     if (params.id && props.runs.length > 0) {
       const run = props.runs.find((run) => run.id === params.id);
-      if (run) setDate(run.fields.date);
+      if (run)
+      setDate(run.fields.date);
       setRunnerName(run.fields.runnerName);
       setDistance(run.fields.distance);
       setHours(run.fields.hours);
@@ -58,11 +57,6 @@ function NewRunForm(props) {
     props.setToggleFetch((curr) => !curr);
     history.push("/");
   };
-  // var curr = new Date();
-  // curr.setDate(curr.getDate() + 3);
-  // var date = curr.toISOString().substr(0,10);
-
-  // document.getElementById('date').valueAsDate = new Date();
 
   return (
     <form onSubmit={handleSubmit}>

@@ -1,10 +1,11 @@
 .run-card {
-  background-color:#343763;
+  background-color: #414585;
   width: 40%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 5fr 3fr 7fr;
   justify-items: start;
+  border-radius: 15px;
 }
 .run-card p, .run-card label {
   margin: 4px;

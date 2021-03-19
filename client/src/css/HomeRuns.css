@@ -1,13 +1,15 @@
 
 .mapped-container {
-    display: flex;
-    flex-direction: column;
-    /* background-color: lightgreen; */
-    background-color: 
+  display: flex;
+  flex-direction: column;
+  background-color: #343763;
+  margin: 0 auto;
+  width: 70%;
+  border-radius: 15px;
 }
 .run-container {
-  background-color: #343763;
-  width: 50%;
+  background-color: #414585;
+  width: 85%;
   margin: 20px auto;
   display: grid;
   grid-template-columns: 7fr 3fr;
