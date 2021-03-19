@@ -1,7 +1,3 @@
-* {
-  /* block-size: fit-content;
-  text-align: center; */
-}
 body {
   background-color: #001d3d;
 }
@@ -9,41 +5,16 @@ a {
   text-decoration: none;
   color: white;
 }
-/* Let's put this in the home-container div */
-/* This is our add run button  */
-.create-new {
-  display: flex;
-  align-self: center;
-  font-size: 50px;
-  border: 10px solid red;
-  box-sizing: border-box;
-  margin: 0 700px 0 0;
-}
 .body {
   padding: 20px 0px;
   display: flex;
   flex-direction: column;
 }
-.header-container {
+.home-container {
   display: flex;
   flex-direction: column;
-  background-color: #ffc300;
-  align-items: flex-start;
-  text-decoration: none;
-  margin: 10px;
-  /* width: fit-content; */
 }
-.header-title{
-  font-size: x-large;
-  color: #001d3d;
-}
-.add-button-div {
-  background-color:rgb(0, 172, 230);
-  margin: 0 auto;
-  width: fit-content;
-}
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) { 
-  .header-container {
-    align-items: center;
-  }
-}
+
+/* @media only screen and (min-device-width: 375px) and (max-device-width: 667px) { 
+
+} */

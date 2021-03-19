@@ -1,0 +1,8 @@
+.create-new {
+  display: flex;
+  align-self: center;
+  font-size: 50px;
+  border: 10px solid red;
+  box-sizing: border-box;
+  margin: 0 700px 0 0;
+}

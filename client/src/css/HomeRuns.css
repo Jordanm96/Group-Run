@@ -1,12 +1,12 @@
 
-.home-container {
+.mapped-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     /* Use row if I want multiple runs per line
        Will have to add a MQ  */
     /* flex-direction: row; */
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
 }
 .run-container {
   /* background-color: grey; ??? */
@@ -59,9 +59,7 @@ Add a hover effect so people know it is a button to RunData */
   align-self: center;
   justify-self: center;
 }
-#delete-button :hover {
-  
-}
+
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) { 
 .run-container {
   width: 85%;

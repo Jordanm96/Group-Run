@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
+import "../css/CreateNav.css";
 
-function Navbar() {
+function CreateNav() {
   return (
     <div className="create-new">
         <Link classname="add-button" to = "/add">+</Link>
@@ -8,4 +9,4 @@ function Navbar() {
   );
 };
 
-export default Navbar;
+export default CreateNav;
