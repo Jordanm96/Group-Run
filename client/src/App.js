@@ -32,7 +32,7 @@ function App() {
       </Route>
 
       <Route exact path="/">
-        <CreateNav />
+        {/* <CreateNav /> */}
         <div className="home-container">
           <div className="mapped-container">
             {runs.map((run) => (

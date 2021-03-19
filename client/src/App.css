@@ -8,6 +8,11 @@ a {
   text-decoration: none;
   /* color: white; */
 }
+a :hover {
+  color: #0bfc03;
+  transform: scale(1.2);
+
+}
 .body {
   padding: 20px 0px;
   display: flex;

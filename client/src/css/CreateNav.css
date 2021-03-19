@@ -1,9 +1,8 @@
-.create-new {
+/* .create-new {
   display: flex;
   align-self: center;
   font-size: 40px;
   box-sizing: border-box;
-  margin: 0 700px 20px 0;
   background-color: #414585;
   border-radius: 15px;
   padding: 10px;
@@ -11,7 +10,7 @@
 
 #add-button {
   color: white;
-}
+} */
 /* #add-button :hover {
   color: purple;
 } */

@@ -1,7 +1,7 @@
 .run-card {
   background-color: #414585;
   width: 40%;
-  margin: 0 auto;
+  margin: 0px auto;
   display: grid;
   grid-template-columns: 5fr 3fr 7fr;
   justify-items: start;
