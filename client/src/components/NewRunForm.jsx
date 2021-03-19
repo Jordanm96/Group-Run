@@ -7,7 +7,7 @@ import "../css/NewRunForm.css";
 
 function NewRunForm(props) {
   // I want the useState value for date to be set to whatever day it currently is
-  const [date, setDate] = useState("");
+  const [date, setDate] = useState(new Date().toISOString().substring(0,10));
   // const [date, setDate] = useState(new Date().toLocaleDateString('en-US'));
 
   const [runnerName, setRunnerName] = useState("");
@@ -33,7 +33,7 @@ function NewRunForm(props) {
       setCaloriesBurned(run.fields.caloriesBurned);
       setSatisfactionLevel(run.fields.satisfactionLevel);
       setAdditionalNotes(run.fields.additionalNotes);
-    }
+    } 
   }, [props.runs, params.id]);
 
   const handleSubmit = async (e) => {
@@ -88,8 +88,6 @@ function NewRunForm(props) {
             required
             id="date"
             type="date"
-            defaultValue={date}
-            // onFocus={(e) => e.target.type = 'date'}
             value={date}
             onChange={(e) => setDate(e.target.value)}
           />{" "}

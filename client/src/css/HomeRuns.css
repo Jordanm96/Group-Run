@@ -1,36 +1,32 @@
 
 .mapped-container {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    /* Use row if I want multiple runs per line
-       Will have to add a MQ  */
-    /* flex-direction: row; */
     /* background-color: lightgreen; */
+    background-color: 
 }
 .run-container {
-  /* background-color: grey; ??? */
-  background-color: rgb(0, 172, 230);
-  width: 40%;
+  background-color: #343763;
+  width: 50%;
   margin: 20px auto;
   display: grid;
   grid-template-columns: 7fr 3fr;
   grid-template-rows: repeat(2,1fr);
-  border: 2px solid lightcoral;
+  border-radius: 15px;
 }
 
-/* This is my runnerName link
-Add a hover effect so people know it is a button to RunData */
 .runner-link {
   grid-column: 1;
   grid-row: 1;
   width: fit-content;
   align-self: center;
   justify-self: center;
+  font-size: 14px;
+  color: white;
 }
 .runner-link :hover {
-  color: #ff7a59;
-  transform: scale(1.1);
+  color: cyan;
+  transform: scale(1.2);
 }
 .rating{
   grid-column: 1;
@@ -58,6 +54,10 @@ Add a hover effect so people know it is a button to RunData */
   cursor: pointer;
   align-self: center;
   justify-self: center;
+}
+#delete-button :hover{
+  color: red;
+  transform: scale(1.4);
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) { 

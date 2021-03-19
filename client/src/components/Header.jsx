@@ -4,14 +4,12 @@ import "../css/Header.css";
 
 function Header() {
   return (
-    <div className = "header-container">
-      <header>
+      <header className = "header-container">
         <Link className="header-title" to = "/">
         <h1>GROUP RUN!</h1>
         </Link>
         {/* <img src = "https://www.clipartkey.com/mpngs/m/18-186620_stick-figure-stick-man-running-clip-art-running.png" alt = "running man"/> */}
       </header>
-    </div>
   );
 }
 

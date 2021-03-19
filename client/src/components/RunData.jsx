@@ -1,13 +1,18 @@
-import { useParams, Link } from "react-router-dom";
+import { useHistory, useParams, Link } from "react-router-dom";
 import "../css/RunData.css";
 
 function RunData(props) {
   const params = useParams();
+  const history = useHistory();
   const { runs } = props;
   const run = runs.find((run) => run.id === params.id);
 
-  if (!run) {
-    return <></>;
+  // If runs have not loaded yet...
+  if (!run && !runs.length) {
+    return <h3>Loading...</h3>;
+  } else if (!run) {
+    // if the runs are loaded and we still can't find it, send the user to home
+    history.push('/')
   }
 
   const {
@@ -41,10 +46,10 @@ function RunData(props) {
       {additionalNotes ? <p className="comments-entry">{additionalNotes}</p> : <p className="comments-entry">No comments</p>}
 
       <Link class="home-button" to="/">
-        <button class="home-button" >🏠</button>
+        <button class="home-button" ><i class="fas fa-home"></i></button>
       </Link>
       <Link class="edit-button" to={`/edit/${run.id}`}>
-        <button class="edit-button">📝</button>
+        <button class="edit-button"><i class="far fa-edit"></i></button>
       </Link>
     </div>
   );

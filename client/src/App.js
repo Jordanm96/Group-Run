@@ -44,6 +44,9 @@ function App() {
             ))}
           </div>
         </div>
+        <div className="footer">
+          <Footer />
+        </div>
       </Route>
 
       <Route path="/run/:id">
@@ -58,12 +61,6 @@ function App() {
       <Route path="/edit/:id">
         <h2 className="edit-run-here">Edit:</h2>
         <NewRunForm runs={runs} setToggleFetch={setToggleFetch} />
-      </Route>
-
-      <Route exact path="/">
-        <div className="footer">
-          <Footer />
-        </div>
       </Route>
     </div>
   );

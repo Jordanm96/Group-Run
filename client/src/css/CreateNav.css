@@ -1,8 +1,15 @@
 .create-new {
   display: flex;
   align-self: center;
-  font-size: 50px;
-  border: 10px solid red;
+  font-size: 40px;
+  /* border: 5px solid red; */
   box-sizing: border-box;
   margin: 0 700px 0 0;
+}
+
+#add-button {
+  color: white;
+}
+#add-button :hover {
+  color: purple;
 }

@@ -1,7 +1,7 @@
 .header-container {
   display: flex;
   flex-direction: column;
-  background-color: #ffc300;
+  background-color: #343763;
   align-items: flex-start;
   text-decoration: none;
   margin: 10px;
@@ -9,7 +9,11 @@
 }
 .header-title{
   font-size: x-large;
-  color: #001d3d;
+  color: white;
+  padding: 20px;
+}
+.header-title :hover {
+  color: cyan;
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) { 
   .header-container {

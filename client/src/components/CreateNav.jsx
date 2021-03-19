@@ -4,7 +4,7 @@ import "../css/CreateNav.css";
 function CreateNav() {
   return (
     <div className="create-new">
-        <Link classname="add-button" to = "/add">+</Link>
+        <Link id="add-button" to = "/add">New Run+</Link>
     </div>
   );
 };
