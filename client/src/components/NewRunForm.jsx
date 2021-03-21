@@ -9,11 +9,11 @@ function NewRunForm(props) {
   // const [date, setDate] = useState(new Date().toISOString().substring(0, 10));
   const [date, setDate] = useState("");
   const [runnerName, setRunnerName] = useState("");
-  const [distance, setDistance] = useState("");
-  const [hours, setHours] = useState("");
-  const [minutes, setMinutes] = useState("");
-  const [seconds, setSeconds] = useState("");
-  const [caloriesBurned, setCaloriesBurned] = useState("");
+  const [distance, setDistance] = useState(0);
+  const [hours, setHours] = useState(0);
+  const [minutes, setMinutes] = useState(0);
+  const [seconds, setSeconds] = useState(0);
+  const [caloriesBurned, setCaloriesBurned] = useState(0);
   const [satisfactionLevel, setSatisfactionLevel] = useState();
   const [additionalNotes, setAdditionalNotes] = useState("");
   const history = useHistory();
@@ -94,7 +94,6 @@ function NewRunForm(props) {
             id="distance"
             type="number"
             min="0"
-            placeholder= "0"
             value={distance}
             onChange={(e) => setDistance(e.target.valueAsNumber)}
           />{" "}
@@ -110,7 +109,6 @@ function NewRunForm(props) {
             className="duration"
             type="number"
             min="0"
-            placeholder= "0"
             value={hours}
             onChange={(e) => setHours(e.target.valueAsNumber)}
           />
@@ -123,7 +121,6 @@ function NewRunForm(props) {
             type="number"
             min="0"
             max="59"
-            placeholder= "0"
             value={minutes}
             onChange={(e) => setMinutes(e.target.valueAsNumber)}
           />
@@ -136,7 +133,6 @@ function NewRunForm(props) {
             type="number"
             min="0"
             max="59"
-            placeholder= "0"
             value={seconds}
             onChange={(e) => setSeconds(e.target.valueAsNumber)}
           />
@@ -149,7 +145,6 @@ function NewRunForm(props) {
             id="caloriesBurned"
             type="number"
             min="0"
-            placeholder= "0"
             value={caloriesBurned}
             onChange={(e) => setCaloriesBurned(e.target.valueAsNumber)}
           />
@@ -167,6 +162,7 @@ function NewRunForm(props) {
           How are you feeling?{" "}</label>
         <input
           className = "range-bar"
+            required
             type="range"
             // value="{satisfactionLevel}"
             min="1"
