@@ -22,54 +22,45 @@ Phone:
 [Edit Component](https://wireframe.cc/l5ynUD)
 [Specific Run Component](https://wireframe.cc/AU5U6z)
 
-Tablet:
-[Homepage](https://wireframe.cc/uIUL3w)
-[Form Component](https://wireframe.cc/W876uP)
-[Edit Component](https://wireframe.cc/MRlotu)
-[Specific Run Component](https://wireframe.cc/Azv2nM)
-
 ## Component Heirarchy
-The homepage maps out all of the runs. (add an edit and delete button for each run)
-When you click on the run it will link to /specificrun which has all the info for that run on it
 
 [My component heirarchy](https://imgur.com/ehwd0aw)
 
 ## Airtable Sample
-
-https://airtable.com/tbld24sbpYe5O0OAX/viwwAvtTbXMXsdlp5?blocks=hide
 
 Sample return 
 ```
 {
     "records": [
         {
-            "id": "recGvcUXmKI2pKRSz",
+            "id": "recigvbLySfaMvqbw",
             "fields": {
-                "satisfactionLevel": 4,
-                "time": 30,
-                "additionalNotes": "had to cut my run short due to the weather",
-                "caloriesBurned": 330,
-                "date": "2021-03-13",
-                "distance": 3.2,
-                "runnerName": "Junea"
+                "runnerName": "JORDAN",
+                "minutes": 43,
+                "satisfactionLevel": 5,
+                "caloriesBurned": 450,
+                "date": "2021-03-15",
+                "hours": 0,
+                "seconds": 0,
+                "distance": 4
             },
-            "createdTime": "2021-03-13T23:13:34.000Z"
+            "createdTime": "2021-03-16T00:24:42.000Z"
         },
         {
-            "id": "recxft12eKPn2B55h",
+            "id": "rectQPYw8siMRIu7F",
             "fields": {
-                "satisfactionLevel": 5,
-                "time": 18,
-                "caloriesBurned": 220,
-                "date": "2021-03-14",
-                "distance": 2,
-                "runnerName": "Jordan"
+                "runnerName": "JORDAN",
+                "minutes": 18,
+                "satisfactionLevel": 4,
+                "additionalNotes": "slow one today",
+                "caloriesBurned": 225,
+                "date": "2021-03-16",
+                "hours": 0,
+                "seconds": 6,
+                "distance": 2
             },
-            "createdTime": "2021-03-14T16:41:05.000Z"
-        }
-    ],
-    "offset": "recxft12eKPn2B55h"
-}
+            "createdTime": "2021-03-16T19:12:02.000Z"
+        },
 ```
 ## MVP/PostMVP
 
@@ -84,7 +75,7 @@ Sample return
 - Allow edits to past runs
 - Include a box at the top that will always have the users best run based on distance and speed
 - Include a location input on the form component
-- Use emojis/symbols as the ranking system instead of just stars
+- Use emojis/symbols as the ranking system
 
 ## Project Schedule
 
@@ -93,10 +84,10 @@ Sample return
 |Mar 13-15| Prompt / Wireframes / Component Heirarchy / Timeframes | Complete
 |Mar 15| Project Approval | Complete
 |Mar 15-16| Create Components/ Get,Set Data| Complete
-|Mar 15-16| Create basic CSS for all Media-queries| Incomplete
+|Mar 15-16| Create basic CSS for all Media-queries| Complete
 |Mar 17-18| MVP | Complete
-|Mar 18-19| Advanced CSS/ Darkmode,Lightmode | Incomplete
-|Mar 19-21| PMVP/Finalize CSS | Incomplete
+|Mar 18-19| Advanced CSS | Complete
+|Mar 19-21| PMVP/Finalize CSS | Complete
 |March 22| Presentations | Incomplete
 
 ## Timeframes
@@ -107,16 +98,16 @@ Sample return
 | Airtable Setup | H | 1hrs| 1hrs | 1hrs |
 | useEffect() | H | 1.5hrs| 2hrs | 2hrs |
 | Header Component | H | 2hrs| 1.5hrs | 1.5hrs |
-| Home Component | H | 2hrs| hrs | 1hrs |
+| Home Component | H | 2hrs| hrs | 3hrs |
 | RunData Component | H | 4hrs| 3hrs | 3hrs |
-| NewRunForm Component | H | 3hrs| 4hrs | 4hrs |
+| NewRunForm Component | H | 3hrs| 4hrs | 7hrs |
 | Route/Link | H | 4hrs| 3hrs | 3hrs |
-| Header CSS | H | 2hrs| hrs | hrs |
-| Home CSS | H | 4hrs| 6hrs | hrs |
-| Run CSS | H | 4hrs| 3hrs | hrs |
-| Form CSS | H | 4hrs| 5hrs | 5hrs |
-| Media-queries | H | 8hrs| hrs | hrs |
-| Total | H | 39.5hrs| hrs | hrs |
+| Header CSS | H | 2hrs| hrs | .5hrs |
+| Home CSS | H | 4hrs| 6hrs | 4hrs |
+| Run CSS | H | 4hrs| 3hrs | 2.5hrs |
+| Form CSS | H | 4hrs| 5hrs | 4hrs |
+| Media-queries | H | 8hrs| hrs | 2hrs |
+| Total | H | 39.5hrs| hrs | 34.5hrs |
 
 ## SWOT Analysis
 
