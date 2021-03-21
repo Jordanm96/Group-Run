@@ -3,10 +3,8 @@ import { useState, useEffect } from "react";
 import { useHistory, useParams, Link } from "react-router-dom";
 import { baseURL, config } from "../services";
 import "../css/NewRunForm.css";
-// Import params here for the edit PUT request
 
 function NewRunForm(props) {
-  // const [date, setDate] = useState(new Date().toISOString().substring(0, 10));
   const [date, setDate] = useState("");
   const [runnerName, setRunnerName] = useState("");
   const [distance, setDistance] = useState(0);
@@ -149,22 +147,12 @@ function NewRunForm(props) {
             onChange={(e) => setCaloriesBurned(e.target.valueAsNumber)}
           />
         </label>
-        {/* <div className = "emojis">
-          <p>☠️</p>
-          <p>😵</p>
-          <p>😤</p>
-          <p>😁</p>
-          <p>🤩</p>
-        </div> */}
-        {/* Will have to find a way for the satisfaction level to be converted to stars so they are logged in airtable */}
-        {/* create a drop down method here for the input 1-5 */}
         <label className="satisfaction-level" htmlFor="satisfactionLevel">
           How are you feeling?{" "}</label>
         <input
           className = "range-bar"
             required
             type="range"
-            // value="{satisfactionLevel}"
             min="1"
             max="5"
             onChange={(e) => setSatisfactionLevel(e.target.valueAsNumber)}
@@ -176,16 +164,6 @@ function NewRunForm(props) {
           <p>😎</p>
           <p>🤩</p>
         </div>
-          {/* <select> */}
-          {/* <option type = "number" value="{satisfactionLevel}" onChange={(e) => setSatisfactionLevel(e.target.value)}>🤩</option> */}
-          {/* <option type = "number" value="{satisfactionLevel}" onChange={(e) => setSatisfactionLevel(e.target.valueAsNumber)}>5</option>
-          <option type = "number" value="{satisfactionLevel}" onChange={(e) => setSatisfactionLevel(e.target.valueAsNumber)}>4</option>
-          <option type = "number" value="{satisfactionLevel}" onChange={(e) => setSatisfactionLevel(e.target.valueAsNumber)}>3</option>
-          <option type = "number" value="{satisfactionLevel}" onChange={(e) => setSatisfactionLevel(e.target.valueAsNumber)}>2</option>
-          <option type = "number" value="{satisfactionLevel}" onChange={(e) => setSatisfactionLevel(e.target.valueAsNumber)}>1</option>
-        </select> */}
-        
-
         <label className="additional-notes" htmlFor="additionalNotes">
           Notes (optional):{" "}
           <textarea
@@ -195,7 +173,6 @@ function NewRunForm(props) {
             onChange={(e) => setAdditionalNotes(e.target.value)}
           />
         </label>
-
         <div className="form-buttons">
           <button className="form-buttons" id="add=button" type="submit">
             Add
