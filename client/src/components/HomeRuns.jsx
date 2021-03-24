@@ -20,7 +20,7 @@ function Run(props) {
           <i className="fas fa-running"></i> {runnerName}'S RUN
         </h2>
       </Link>
-      <p className="rating">Rating: {satisfactionLevel}/5</p>key
+      <p className="rating">Rating: {satisfactionLevel}/5</p>
       <p className="date-logged">{date}</p>
       <button id="delete-button" onClick={deleteRun}>
         <i class="fas fa-trash"></i>
