@@ -7,12 +7,14 @@ import RunData from "./components/RunData";
 import NewRunForm from "./components/NewRunForm";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+// import FilteredRuns from "./components/FilteredRuns";
 import "./App.css";
 
 function App() {
   const [runs, setRuns] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(true);
-
+  // const [userInput, setUserInput] = useState("");
+  
   useEffect(() => {
     const getRuns = async () => {
       const resp = await axios.get(baseURL, config);
@@ -30,8 +32,21 @@ function App() {
         <Header />
       </Route>
       <Route exact path="/">
+      {/*
+      <form className="search-form">
+       <input
+        className="search-input"
+        placeholder="Search"
+        type="text"
+        onChange={(e) => setUserInput(e.target.value)}
+          />
+          </form> */}
         <div className="home-container">
           <div className="mapped-container">
+            {/* {userInput ? (
+              runs.map((run) => (
+              <FilteredRuns runs={runs} run={run} userInput={userInput}/>) )): ( */}
+              
             {runs.map((run) => (
               <HomeRuns
                 key={run.id}
@@ -39,6 +54,7 @@ function App() {
                 setToggleFetch={setToggleFetch}
               />
             ))}
+              )}
           </div>
         </div>
         <div className="footer">
